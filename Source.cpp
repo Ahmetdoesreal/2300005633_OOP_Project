@@ -166,18 +166,23 @@ class Cart
 {
 public:
 	Cart() {
-		LanguageCourses Language[5];
-		SoftwareCourses Software[20];
-		ProfessionalDevelopmentCourses Professional[10];
-		Electives Elective[40];
+
 	}
 	void ViewCart() {
 		for (int i = 0; i < inCart; i++)
 		{
+			switch (Items[i][0])
+			{
+			case 0: main:Lang[i]
+			}
 		}
 	}
 private:
 	int inCart=0, Items[3][2] = { {0} };
 };
 int main() {
+	LanguageCourses Lang[5];
+	SoftwareCourses Soft[20];
+	ProfessionalDevelopmentCourses Prof[10];
+	Electives Elec[40];
 }
