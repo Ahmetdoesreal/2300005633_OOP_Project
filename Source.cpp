@@ -63,7 +63,7 @@ private:
 public:
 
 	LanguageCourses():OnlineCourse() {
-		Language = "undefinedL", Native = false, prefix = "undefinedp";
+		Language = "undefinedL", Native = false, prefix = "LANG";
 	}
 	// OnlineCourse aracýlýðýyla devralýndý
 	void displayInfo() override
@@ -157,7 +157,12 @@ public:
 	Student() {
 		info[0] = "undefinedName", info[1] = "undefinedSurname", info[2] = "undefinedAdress";
 	}
-
+	Student(string name, string surname, string mail) {
+		info[0] = name, info[1] = surname, info[2] = mail;
+	}
+	~Student() {
+		cout << "\nLogged Out!";
+	}
 private:
 	string info[3];
 	int registered[100] = { 0 };
@@ -166,23 +171,77 @@ class Cart
 {
 public:
 	Cart() {
-
+		inCart = 0;
+		for (int i = 0; i < 3; i++)
+		{
+			CartList[i] = nullptr;
+		}
+	}
+	void CartInsert(OnlineCourse* InputCourse) {
+		if (inCart < 3)
+			CartList[inCart - 1] = InputCourse;
+		else
+			cout << "Cart full!\nPlease try removing some items or contact your Administrator" << endl;
+	}
+	void RemoveCart(int index) {
+		if (index - 1 > inCart) {
+			cout << "The Cart does not contain that course\n";
+			return;
+		}
+		switch (index)
+		{
+		case 1:
+			switch (inCart)
+			{
+			case 1:CartList[index - 1] = nullptr; break;
+			case 2:CartList[index - 1] = CartList[index]; CartList[index] = nullptr; break;
+			case 3:CartList[index - 1] = CartList[index]; CartList[index] = CartList[index + 1]; CartList[index + 2] = nullptr;
+			default:
+				cout << "There has been an error occured.Please contact Administrator.\a"; break;
+			}
+			break;
+		case 2:
+			switch (inCart)
+			{
+			case 2:CartList[index - 1] = CartList[index]; CartList[index] = nullptr; break;
+			case 3:CartList[index - 1] = CartList[index]; CartList[index] = nullptr; break;
+			default:
+				cout << "There has been an error occured.Please contact Administrator.\a"; break;
+			}
+			break;
+		case 3:
+			switch (inCart)
+			{
+			case 3:CartList[index] = nullptr;
+			default:cout << "There has been an error occured.Please contact Administrator.\a";
+				break;
+			}
+			break;
+		}
 	}
 	void ViewCart() {
 		for (int i = 0; i < inCart; i++)
 		{
-			switch (Items[i][0])
-			{
-			case 0: main:Lang[i]
-			}
+			(*CartList[i]).displayInfo();
 		}
 	}
 private:
-	int inCart=0, Items[3][2] = { {0} };
+	int inCart;
+	OnlineCourse* CartList[3];
 };
 int main() {
-	LanguageCourses Lang[5];
-	SoftwareCourses Soft[20];
-	ProfessionalDevelopmentCourses Prof[10];
-	Electives Elec[40];
+	int EXIT_FLAG = -1,LoggedIn=-1;
+	string name, surname, mail;
+	cout << "Enter Login Information\nName:\t"; cin >> name;
+	cin.ignore();
+	cout << "Surname:\t"; cin >> surname;
+	cin.ignore();
+	cout << "Mail Adress:\t"; cin >> mail;
+	do
+	{
+		Student User(name, surname, mail);
+
+
+	} while (EXIT_FLAG==1);
+	cout << " test";
 }
