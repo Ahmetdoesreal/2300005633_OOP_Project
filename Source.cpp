@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include "Source.h"
 #define MAX_SOFT 16
 #define MAX_LANG 7
 #define MAX_PROF 16
@@ -14,8 +13,10 @@ protected:
 public:
 	double price;
 	float discount;
-	OnlineCourse(int capacityi, int capacityii, int ratei, int ratedppli, int durationi, int leveli, int idi, string namei, string instructori, string prereqsi,double pricei,float discounti) {
-		capacity[0] = capacityi, capacity[1] = capacityii, rate = ratei, ratedppl = ratedppli, duration = durationi, level = leveli, id = idi, CourseName = namei, Instructor = instructori, Prerequisities = prereqsi, price = pricei, discount = discounti;
+
+	//messed up while making the data swapping here to fix it :)
+	OnlineCourse(int capacityavalible, int capacityoccupied, int ratei, int ratedppli, int durationi, int leveli, int idi, string namei, string instructori, string prereqsi,double pricei,float discounti) {
+		capacity[0] = capacityoccupied, capacity[1] = capacityavalible, rate = ratei, ratedppl = ratedppli, duration = durationi, level = leveli, id = idi, CourseName = namei, Instructor = instructori, Prerequisities = prereqsi, price = pricei, discount = discounti;
 	}
 	OnlineCourse() {
 		CourseName = "undefinedC", Instructor = "undefinedI", Prerequisities = "undefinedP", capacity[0] = 10, capacity[1] = 0, rate = 0, ratedppl = 0, level = 0, id = 0, duration = 14, price = 100000, discount = 12.5;
@@ -50,7 +51,10 @@ public:
 	// OnlineCourse aracýlýðýyla devralýndý
 	void displayInfo() override
 	{
-		cout << "Course Code: " << prefix << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "\nRate =\t" << static_cast<float>(rate / 20) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t" << discount << "%\nLevel:\t" << level << "\nLanugage:" << Language << "\n Environment :" << Environment << endl;
+		cout << "Course Code: " << prefix << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "]\nRate =\t\t" << static_cast<float>(rate / 20) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t" << discount << "%\nLevel:\t\t" << level << "\nLanugage:\t" << Language << "\nEnvironment:\t" << Environment << endl;
+
+		if (checkCapacity() <= 0)
+			cout << "\nCourse Full!!\n\n";
 	}
 
 	void addStudent() override
@@ -86,11 +90,14 @@ public:
 	// OnlineCourse aracýlýðýyla devralýndý
 	void displayInfo() override
 	{
-		cout << "Course Code: " << prefix << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "\nRate =\t" << static_cast<float>(rate / 20) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t" << discount << "%\nLevel:\t" << level << "\nLanugage:" << Language <<"\nNative Teacher=";
+		cout << "Course Code: " << prefix << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "]\nRate =\t\t" << static_cast<float>(rate / 20) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t" << discount << "%\nLevel:\t" << level << "\nLanugage:" << Language <<"\nNative Teacher=";
 		if (Native == true)
 			cout << "Yes" << endl;
 		else
 			cout << "No" << endl;
+
+		if (checkCapacity() <= 0)
+			cout << "\nCourse Full!!\n\n";
 	}
 
 	void addStudent() override
@@ -128,11 +135,14 @@ public:
 	// OnlineCourse aracýlýðýyla devralýndý
 	void displayInfo() override
 	{
-		cout << "Course Code: " << prefix << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "\nRate =\t" << static_cast<float>(rate / 20) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t" << discount << "%\nLevel:\t" << level << "\nTopics:" << Topics << "\nCertification=";
+		cout << "Course Code: " << prefix << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "]\nRate =\t\t" << static_cast<float>(rate / 20) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t" << discount << "%\nLevel:\t" << level << "\nTopics:" << Topics << "\nCertification=";
 		if (Certification == true)
 			cout << "Yes" << endl;
 		else
 			cout << "No" << endl;
+
+		if (checkCapacity() <= 0)
+			cout << "\nCourse Full!!\n\n";
 	}
 
 	void addStudent() override
@@ -170,11 +180,14 @@ public:
 	// OnlineCourse aracýlýðýyla devralýndý
 	void displayInfo() override
 	{
-		cout << "Course Code: " << Origin[1] << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "\nRate =\t" << static_cast<float>(rate / 20) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t" << discount << "%\nLevel:\t" << level << "Is it Departmental=";
+		cout << "Course Code: " << Origin[1] << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "]\nRate =\t\t" << static_cast<float>(rate / 20) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t\t" << discount << "%\nLevel:\t" << level << "Is it Departmental=";
 		if (Departmental == true)
 			cout << "Yes\n" << "Origin Department" << Origin[0] << endl;
 		else
 			cout << "No" << endl;
+
+		if (checkCapacity() <= 0)
+			cout << "\nCourse Full!!\n\n";
 	}
 
 	void addStudent() override
@@ -292,6 +305,13 @@ public:
 			CartList[i] = nullptr;
 		}
 	}
+
+	void CartInsert(int id) {
+		if (inCart < 3)
+			idList[inCart - 1] = id;
+		else
+			cout << "Cart full!\nPlease try removing some items or contact your Administrator" << endl;
+	}
 	void CartInsert(OnlineCourse* InputCourse) {
 		if (inCart < 3)
 			CartList[inCart - 1] = InputCourse;
@@ -349,7 +369,7 @@ public:
 		}
 	}
 private:
-	int inCart;
+	int inCart,idList[3];
 	OnlineCourse* CartList[3];
 };
 void fixChoice(char* input) {
@@ -359,21 +379,22 @@ void fixChoice(char* input) {
 
 int main() {
 	int EXIT_FLAG = -1,LoggedIn=-1;
-
 	do
 	{
-		char choice = 0;
-		string name="", surname="", mail="";
-		cout << "Enter Login Information\nName:\t"; getline(cin, name);
+		string warn;
+		char choice = 127;
+		string name = "", surname = "", mail = ""; 
+		cout << "Enter Login Information\nName:\t\t";getline(cin, name);
 		cout << "Surname:\t"; cin >> surname;
 		cin.ignore();
 		cout << "Mail Adress:\t"; cin >> mail;
 		cin.ignore();
 		Student User(name, surname, mail);
 		Cart UserCart;
+		cout << "\n\nWelcome " << User.getInfo("name") << " " << User.getInfo("surname") << "\nlogged in as \"" << User.getInfo("mail") << "\"\n";
 		do
 		{
-			cout << "Welcome " << User.getInfo("name") << " " << User.getInfo("surname") << "\nlogged in as \"" << User.getInfo("mail") << "\"\nPlease Select a Choice\n1:Change Information\n2:List User Information\n3:List Avalible Courses\n";
+			cout<<"Please Select a Choice\n1 : Change Information\n2 : List User Information\n3 : List Avalible Courses\n4 : Add Course to Cart";
 			cout << "\nl to log out\nq to Quit"<<endl;
 			cin >> choice;
 			fixChoice(&choice);
@@ -441,7 +462,7 @@ int main() {
 				} while (choice != '4');
 			}break;
 			case '2': {
-				cout << "User Name:" << User.getInfo("name") << "\nUser Surname" << User.getInfo("surname") << "\nUser Mail" << User.getInfo("mail") << endl;
+				cout << "User Name: " << User.getInfo("name") << "\nUser Surname: " << User.getInfo("surname") << "\nUser Mail: " << User.getInfo("mail") << endl;
 				User.ListRegistered();
 				UserCart.ViewCart();
 			}break;
@@ -453,7 +474,7 @@ int main() {
 					case '1': {
 						for (int i = 0; i < MAX_SOFT; i++)
 						{
-							cout << "Course " << i << " for Software\n";
+							cout << "Course " << i+1 << " for Software\n";
 							Software[i].displayInfo();
 							cout << endl;
 						}
@@ -461,7 +482,7 @@ int main() {
 					case '2': {
 						for (int i = 0; i < MAX_LANG; i++)
 						{
-							cout << "Course " << i << " for Language\n";
+							cout << "Course " << i+1 << " for Language\n";
 							Language[i].displayInfo();
 							cout << endl;
 						}
@@ -469,7 +490,7 @@ int main() {
 					case '3': {
 						for (int i = 0; i < MAX_PROF; i++)
 						{
-							cout << "Course " << i << " for Professional Development\n";
+							cout << "Course " << i+1 << " for Professional Development\n";
 							Professional[i].displayInfo();
 							cout << endl;
 						}
@@ -477,7 +498,7 @@ int main() {
 					case '4': {
 						for (int i = 0; i < MAX_ELEC; i++)
 						{
-							cout << "Course " << i << " for Elective\n";
+							cout << "Course " << i+1 << " for Elective\n";
 							Elective[i].displayInfo();
 							cout << endl;
 						}
@@ -488,9 +509,50 @@ int main() {
 					}
 				} while (choice != '5');
 			}break;
+			case '4': {
+				int id=0;
+				cout << "Select Course Category:\n1-Software Courses\n2-Language Courses\n3-Professional Development Courses\n4-Elective Courses\n5-Go Back" << endl; cin >> choice; cin.ignore(); fixChoice(&choice);
+				
+				switch (choice)
+				{
+				case '1':
+					cout << "Enter Software Course ID :"; cin >> id;
+					for (int i = 0; i < MAX_SOFT; i++)
+					{
+						if ((Software[i].getCalculatedID() % 10000) == id) {
+							UserCart.CartInsert(Software[i].getCalculatedID());
+						}
+					}
+				default:
+					break;
+				}
+			}
 			case 'l':
+			{
+				cout << "You Choose To log out please enter \"logout\" exactly to log out:\n"; cin >> warn;
+				if (warn!="logout")
+				{
+					cout << "Authentication failed!";
+					choice = 0;
+				}
+				getline(cin,warn);
+			}
 				break;
 			case 'q':
+			{
+				cout << "You Choose To Quit Program please enter \":q!\" exactly to  end the session:\n"; cin >> warn;
+				
+				if (warn == "howdoiexitvim") {
+					cout << "Access granted!,Quitting";
+					return 1;
+				}
+				else if (warn != ":q!")
+				{
+					cout << "Authentication failed!";
+					choice = 0;
+					break;
+				}
+			}
 				EXIT_FLAG = 1; break;
 			default:
 				cout << "Selected Option \""<<choice<<"\"Please Select A Supported Option\n";
@@ -499,5 +561,6 @@ int main() {
 		} while (!(choice =='l' || choice == 'q'));
 
 	} while (EXIT_FLAG!=1);
-	cout << " test";
+	cout << "\nExiting!";
+	return 0;
 }
