@@ -25,6 +25,7 @@ public:
 	virtual void addStudent() = 0;
 	virtual int checkCapacity() = 0;
 	virtual int getCalculatedID() = 0;
+	virtual bool checkPrefixID(string checkprefix,int checkid) = 0;
 	//void displayInfo() {
 	//	cout << "Course Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "]\nRate =\t" << static_cast<float>(rate / 20) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t" << discount << "%\nLevel:\t" << level << endl;
 	//}
@@ -42,6 +43,13 @@ class SoftwareCourses :public OnlineCourse {
 private:
 	string Language, Environment, prefix;
 public:
+	bool checkPrefixID(string checkprefix, int checkid) {
+		if (prefix != checkprefix)
+			return false;
+		if (id != checkid)
+			return false;
+		return true;
+	}
 	SoftwareCourses() :OnlineCourse() {
 		Language = "undefinedL", Environment = "undefinedE", prefix = "undefinedp";
 	}
@@ -79,7 +87,13 @@ private:
 	string Language,prefix;
 	bool Native;
 public:
-
+	bool checkPrefixID(string checkprefix, int checkid) {
+		if (prefix != checkprefix)
+			return false;
+		if (id != checkid)
+			return false;
+		return true;
+	}
 	LanguageCourses():OnlineCourse() {
 		Language = "undefinedL", Native = false, prefix = "LANG";
 	}
@@ -123,7 +137,13 @@ private:
 	string Topics,prefix;
 	bool Certification;
 public:
-
+	bool checkPrefixID(string checkprefix, int checkid) {
+		if (prefix != checkprefix)
+			return false;
+		if (id != checkid)
+			return false;
+		return true;
+	}
 	ProfessionalDevelopmentCourses() :OnlineCourse(){
 		
 		Topics = "undefinedT", Certification = false, prefix = "undefinedp";
@@ -169,6 +189,13 @@ private:
 	string Origin[2];//index 0 which dep. index 1=prefix
 
 public:
+	bool checkPrefixID(string checkprefix, int checkid) {
+		if (Origin[1] != checkprefix)
+			return false;
+		if (id != checkid)
+			return false;
+		return true;
+	}
 	Electives():OnlineCourse() {
 		
 		Origin[0] = "undefined0", Departmental = false, Origin[1] = "undefined1";
@@ -254,6 +281,11 @@ public:
 		return "Unknown";
 	}
 	void ListRegistered() {
+		if (registered[0]<=0)
+		{
+			cout << "The user has not registered to any courses.\n";
+			return;
+		}
 		cout << "Registered Courses : \n";
 		for (int i = 1; i < registered[0]; i++)
 		{
@@ -284,7 +316,7 @@ public:
 	}
 
 	void RegisterCourse(OnlineCourse& InputCourse) {
-		if ((registered[0] > 99)||registered[0]<0) {
+		if ((registered[0] > 98)||registered[0]<0) {
 			cout << "Maximum Registered Courses Reached\nCan not Register anymore!" << endl;
 			return;
 		}
@@ -305,18 +337,18 @@ public:
 			CartList[i] = nullptr;
 		}
 	}
-
-	void CartInsert(int id) {
-		if (inCart < 3)
-			idList[inCart - 1] = id;
+	bool CartInsert(OnlineCourse* InputCourse) {
+		if (inCart < 3) {
+			CartList[inCart] = InputCourse;
+			inCart++;
+		}
 		else
+		{
 			cout << "Cart full!\nPlease try removing some items or contact your Administrator" << endl;
-	}
-	void CartInsert(OnlineCourse* InputCourse) {
-		if (inCart < 3)
-			CartList[inCart - 1] = InputCourse;
-		else
-			cout << "Cart full!\nPlease try removing some items or contact your Administrator" << endl;
+			return false;
+		}
+		cout << "success??";
+		return true;
 	}
 	void RemoveCart(int index) {
 		if (index - 1 > inCart) {
@@ -355,12 +387,21 @@ public:
 		}
 	}
 	void ViewCart() {
+		if (inCart <= 0)
+		{
+			cout << "Cart Is Empty\n";
+			return;
+		}
+		double totalprice[2] = {0};
 		cout << "In Cart" << endl;
 		for (int i = 0; i < inCart; i++)
 		{
-			cout << "Item" << i << endl;
+			cout << "Item " << i << endl;
 			(*CartList[i]).displayInfo();
+			totalprice[0] += CartList[i]->price;
+			totalprice[1] += ApplyDiscount(*CartList[i]);
 		}
+		cout << "\nTotal Price Of Cart:\t" << totalprice[0] << "\nAfter Discount:\t" << totalprice[1] << "\nAverage Discount Ratio:" << 100-(totalprice[1] / totalprice[0]*100)<<"%"<< endl;
 	}
 	void RegisterItems(Student &User) {
 		for (int i = 0; i < inCart; i++)
@@ -369,14 +410,41 @@ public:
 		}
 	}
 private:
-	int inCart,idList[3];
+	int inCart;
 	OnlineCourse* CartList[3];
 };
 void fixChoice(char* input) {
 	if (*input >= 'A' && *input <= 'Z')
 		*input = *input - 'A' + 'a';
 }
-
+OnlineCourse* findCourse(string Prefix, int id) {
+		for (int i = 0; i < MAX_SOFT; i++)
+			if (Software[i].checkPrefixID(Prefix, id) == true)
+				return &Software[i];
+			else {}
+		for (int i = 0; i < MAX_ELEC; i++)
+			if (Elective[i].checkPrefixID(Prefix, id) == true)
+				return &Elective[i];
+			else {}
+		for (int i = 0; i < MAX_PROF; i++)
+			if (Professional[i].checkPrefixID(Prefix, id) == true)
+				return &Professional[i];
+			else {}
+		for (int i = 0; i < MAX_ELEC; i++)
+			if (Language[i].checkPrefixID(Prefix, id) == true)
+				return &Language[i];
+			else {}
+		return nullptr;
+}
+int powof10(int i) {
+	int val = 1;
+	for (int j = 0; j < i; j++)
+	{
+		val *= 10;
+	}
+	return val;
+		
+}
 int main() {
 	int EXIT_FLAG = -1,LoggedIn=-1;
 	do
@@ -394,7 +462,7 @@ int main() {
 		cout << "\n\nWelcome " << User.getInfo("name") << " " << User.getInfo("surname") << "\nlogged in as \"" << User.getInfo("mail") << "\"\n";
 		do
 		{
-			cout<<"Please Select a Choice\n1 : Change Information\n2 : List User Information\n3 : List Avalible Courses\n4 : Add Course to Cart";
+			cout<<"Please Select a Choice\n1 : Change Information\n2 : List User Information\n3 : List Avalible Courses\n4 : Add Course to Cart\n5 : List Cart";
 			cout << "\nl to log out\nq to Quit"<<endl;
 			cin >> choice;
 			fixChoice(&choice);
@@ -510,23 +578,40 @@ int main() {
 				} while (choice != '5');
 			}break;
 			case '4': {
-				int id=0;
-				cout << "Select Course Category:\n1-Software Courses\n2-Language Courses\n3-Professional Development Courses\n4-Elective Courses\n5-Go Back" << endl; cin >> choice; cin.ignore(); fixChoice(&choice);
-				
-				switch (choice)
-				{
-				case '1':
-					cout << "Enter Software Course ID :"; cin >> id;
-					for (int i = 0; i < MAX_SOFT; i++)
-					{
-						if ((Software[i].getCalculatedID() % 10000) == id) {
-							UserCart.CartInsert(Software[i].getCalculatedID());
+				string wholeid="";
+				string prefix="";
+				int id = 0;
+				cout << "Enter The ID of the Course : ";/* cin >>prefix; cin >>id;*/cin >>wholeid;
+				for ( int i = 0;  i < wholeid.size();  i++)
+				{//This whole part can be avoided if i divided the selection system.
+					if (wholeid[i] >= '0' && wholeid[i] <= '9') {
+						prefix = wholeid.substr(0, i);
+						for (int j = i; j < wholeid.size(); j++)
+						{
+							if (wholeid[j] >= '0' && wholeid[j] <= '9') {
+								id += (wholeid[j] - '0') *powof10(wholeid.size()-(j+1));
+							}
 						}
+						break;
 					}
-				default:
+					
+				}
+				
+				OnlineCourse* search = findCourse(prefix, id);
+				if (search==nullptr)
+				{
+					cout << "Can't Find Requested Course";
 					break;
 				}
-			}
+				if (UserCart.CartInsert(search) != true) {
+					cout << "Can't Add Requested Course";
+					break;
+				}
+				cout << "Successfully added Course to the cart";
+			}break;
+			case '5': {
+				UserCart.ViewCart();
+			}break;
 			case 'l':
 			{
 				cout << "You Choose To log out please enter \"logout\" exactly to log out:\n"; cin >> warn;
