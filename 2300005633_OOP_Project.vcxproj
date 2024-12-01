@@ -27,19 +27,27 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cart.h" />
+    <ClInclude Include="CourseData.h" />
     <ClInclude Include="Electives.h" />
+    <ClInclude Include="Functions.h" />
     <ClInclude Include="LanguageCourses.h" />
     <ClInclude Include="OnlineCourse.h" />
+    <ClInclude Include="Preprocessor.h" />
     <ClInclude Include="ProfessionalCourses.h" />
     <ClInclude Include="SoftwareCourses.h" />
+    <ClInclude Include="Student.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Cart.cpp" />
     <ClCompile Include="Electives.cpp" />
+    <ClCompile Include="Functions.cpp" />
     <ClCompile Include="LanguageCourses.cpp" />
     <ClCompile Include="OnlineCourse.cpp" />
     <ClCompile Include="ProfessionalCourses.cpp" />
     <ClCompile Include="SoftwareCourses.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

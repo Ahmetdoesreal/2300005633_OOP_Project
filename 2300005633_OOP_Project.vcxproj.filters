@@ -30,6 +30,21 @@
     <ClInclude Include="SoftwareCourses.h">
       <Filter>Üst Bilgi Dosyaları</Filter>
     </ClInclude>
+    <ClInclude Include="Preprocessor.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="CourseData.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="Student.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="Cart.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Electives.cpp">
@@ -49,6 +64,15 @@
     </ClCompile>
     <ClCompile Include="Source.cpp">
       <Filter>Kaynak Dosyaları</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions.cpp">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClCompile>
+    <ClCompile Include="Cart.cpp">
+      <Filter>Üst Bilgi Dosyaları</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
