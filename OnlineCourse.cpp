@@ -1,3 +1,4 @@
+#ifndef OC_EXTENSION
 #include "OnlineCourse.h"
 
 	//messed up while making the data swapping here to fix it :)
@@ -20,3 +21,4 @@ OnlineCourse::OnlineCourse() {
 	//	return capacity[0] - capacity[1];
 	//}
 
+#endif

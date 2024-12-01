@@ -1,3 +1,4 @@
+#ifndef PDC_EXTENSION
 #include "ProfessionalCourses.h"
 void ProfessionalDevelopmentCourses::changeRate(int ratei) {
 		cout << (static_cast<float>(rate) / static_cast<float>(ratedppl)) << "->";
@@ -53,3 +54,4 @@ int ProfessionalDevelopmentCourses::getCalculatedID()
 	{
 		return id + 10000;
 	}
+#endif

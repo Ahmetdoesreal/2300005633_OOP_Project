@@ -1,17 +1,21 @@
+#ifndef STUDENT_EXTENSION
 #include "Student.h"
 void Student::rateCourse(int index) {
-		int rate = 0;
-		do {
-			cout << "Enter Your Rating 0-5"; cin >> rate; cin.ignore();
-		} while (rate < 0 && rate > 5);
-		if (getInfo(index) == true)
-			Registered.Courses[index - 1].info->changeRate(rate - Registered.Courses[index - 1].rategiven);
-		else
-			Registered.Courses[index - 1].info->giverating(rate);
-		cout << "\nRate Updated\nThank You For Rating";
-		Registered.Courses[index - 1].isRated = true;
-		Registered.Courses[index - 1].rategiven = rate;
-
+	if (!(index <= Registered.count && index > 0))
+		return;
+	int rate = 0;
+	do {
+		cout << "Enter Your Rating 0-5 (-1 to cancel) :"; cin >> rate; cin.ignore();
+		if (rate == -1)
+			return;
+	} while ((rate < 0) || (rate > 5));
+	if (getInfo(index) == true)
+		Registered.Courses[index - 1].info->changeRate(rate - Registered.Courses[index - 1].rategiven);
+	else
+		Registered.Courses[index - 1].info->giverating(rate);
+	cout << "\nRate Updated\nThank You For Rating";
+	Registered.Courses[index - 1].isRated = true;
+	Registered.Courses[index - 1].rategiven = rate;
 	};
 int Student::RegisterStatus() {
 		switch (Registered.count)
@@ -183,3 +187,4 @@ ostream& operator<< (ostream& output, Student& stu)
 	cout << stu.card.cardholderfullname;
 	return output;
 }
+#endif

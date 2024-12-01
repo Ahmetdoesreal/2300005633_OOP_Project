@@ -1,3 +1,4 @@
+#ifndef SC_EXTENSION
 #include "SoftwareCourses.h"
 void SoftwareCourses::giverating(int ratei) {
 		cout << (static_cast<float>(rate) / static_cast<float>(ratedppl)) << "->";
@@ -50,3 +51,4 @@ int SoftwareCourses::getCalculatedID()
 	{
 		return id + 10000;
 	}
+#endif

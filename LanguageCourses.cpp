@@ -1,3 +1,4 @@
+#ifndef LC_EXTENSION
 #include "LanguageCourses.h"
 void LanguageCourses::giverating(int ratei) {
 		cout << (static_cast<float>(rate) / static_cast<float>(ratedppl)) << "->";
@@ -52,3 +53,4 @@ int LanguageCourses::getCalculatedID()
 	{
 		return id + 10000;
 	}
+#endif

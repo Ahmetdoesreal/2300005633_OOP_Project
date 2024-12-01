@@ -1,3 +1,4 @@
+#ifndef E_EXTENSION
 #include "Electives.h"
 	void Electives::changeRate(int ratei)  {
 		cout << (static_cast<float>(rate) / static_cast<float>(ratedppl)) << "->";
@@ -19,14 +20,14 @@
 	}
 	Electives::Electives() :OnlineCourse() {
 
-		Origin[0] = "undefined0", Departmental = false, Origin[1] = "undefined1";
+		Origin[0] = "undefined0", Departmental = false, Origin[1] = "undefined";
 	}
 	Electives::Electives(int capacityi, int capacityii, int ratei, int ratedppli, int durationi, int leveli, int idi, string namei, string instructori, string prereqsi, double pricei, float discounti, string origini, string prefixi, bool depi) :OnlineCourse(capacityi, capacityii, ratei, ratedppli, durationi, leveli, idi, namei, instructori, prereqsi, pricei, discounti) {
 		Origin[0] = origini, Departmental = depi, Origin[1] = prefixi;
 	}
 	void Electives::displayInfo() 
 	{
-		cout << "Course Code: " << Origin[1] << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "]\nRate =\t\t" << (static_cast<float>(rate) / static_cast<float>(ratedppl)) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t\t" << discount << "%\nLevel:\t" << level << "Is it Departmental=";
+		cout << "Course Code: " << Origin[1] << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "]\nRate =\t\t" << (static_cast<float>(rate) / static_cast<float>(ratedppl)) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t\t" << discount << "%\nLevel:\t" << level << "\tIs it Departmental= ";
 		if (Departmental == true)
 			cout << "Yes\n" << "Origin Department" << Origin[0] << endl;
 		else
@@ -53,3 +54,4 @@
 	{
 		return id + 10000;
 	}
+#endif

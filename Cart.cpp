@@ -1,3 +1,4 @@
+#ifndef CART_EXTENSION
 #include "Cart.h"
 bool Cart::detectDuplicate(OnlineCourse* InputCourse) {
 		for (int i = 0; i < inCart; i++)
@@ -10,7 +11,6 @@ bool Cart::detectDuplicate(OnlineCourse* InputCourse) {
 int Cart::CartStatus() {
 		switch (inCart)
 		{
-		case 0:return 0;
 		case 3:return -1;
 		default:return inCart;
 		}
@@ -71,8 +71,8 @@ void Cart::RemoveCart(int index) {
 		case 2:
 			switch (inCart)
 			{
-			case 2:CartList[index - 1] = CartList[index]; CartList[index] = nullptr; inCart--; break;
-			case 3:CartList[index - 2] = CartList[index - 1]; CartList[index - 1] = CartList[index]; CartList[index] = nullptr; inCart--; break;
+			case 2:CartList[index] = nullptr; inCart--; break;
+			case 3:CartList[index - 1] = CartList[index]; CartList[index] = nullptr; inCart--; break;
 			default:
 				cout << "There has been an error occured.Please contact Administrator.\a"; break;
 			}
@@ -120,3 +120,4 @@ bool Cart::RegisterItems(Student& User) {
 		inCart = 0;
 		return true;
 	}
+#endif
