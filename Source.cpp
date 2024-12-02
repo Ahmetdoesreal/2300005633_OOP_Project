@@ -67,7 +67,7 @@ int main() {
 		cout << "\n\nWelcome " << User.getInfo("name") << " " << User.getInfo("surname") << "\nlogged in as \"" << User.getInfo("mail") << "\"\n";
 		do
 		{
-			cout<<"Please Select a Choice\n1 : Change Information\n2 : List User Information\n3 : List Avalible Courses\n4 : Add Course to Cart\n5 : List Cart\n6 : Remove From Cart\n7 : Rate Registered Courses\n";
+			cout<<"\nPlease Select a Choice\n1 : Change Information\n2 : List User Information\n3 : List Avalible Courses\n4 : Add Course to Cart\n5 : List Cart\n6 : Remove From Cart\n7 : Rate Registered Courses\n";
 			cout << "\nl to log out\nq to Quit"<<endl;
 			cin >> choice;
 			fixChoice(&choice);
