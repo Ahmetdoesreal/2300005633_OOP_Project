@@ -26,7 +26,7 @@ SoftwareCourses::SoftwareCourses(int capacityi, int capacityii, int ratei, int r
 	}
 void SoftwareCourses::displayInfo() 
 	{
-		cout << "Course Code: " << prefix << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "]\nRate =\t\t" << (static_cast<float>(rate) / static_cast<float>(ratedppl)) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t" << discount << "%\nLevel:\t\t" << level << "\nLanugage:\t" << Language << "\nEnvironment:\t" << Environment << endl;
+		cout << "Course Code: " << prefix << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "]\nRate =\t\t" << (static_cast<float>(rate) / static_cast<float>(ratedppl)) << "("<<ratedppl<<")"<<"\nDuration = \t" << duration << "\nPrice = \t" << price << "\tDiscount Rate = \t" << discount << " % \nLevel:\t\t" << level << "\nLanugage:\t" << Language << "\nEnvironment:\t" << Environment << endl;
 
 		if (checkCapacity() <= 0)
 			cout << "\nCourse Full!!\n\n";

@@ -27,7 +27,7 @@
 	}
 	void Electives::displayInfo() 
 	{
-		cout << "Course Code: " << Origin[1] << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "]\nRate =\t\t" << (static_cast<float>(rate) / static_cast<float>(ratedppl)) << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t\t" << discount << "%\nLevel:\t" << level << "\tIs it Departmental= ";
+		cout << "Course Code: " << Origin[1] << id << "\nCourse Name:\t" << CourseName << "\nInstructor:\t" << Instructor << "\nPrerequisites:\t" << Prerequisities << "\nCapacity =\t[" << capacity[1] << "/" << capacity[0] << "]\nRate =\t\t" << (static_cast<float>(rate) / static_cast<float>(ratedppl)) << "(" << ratedppl << ")" << "\nDuration =\t" << duration << "\nPrice =\t" << price << "\tDiscount Rate =\t\t" << discount << "%\nLevel:\t" << level << "\tIs it Departmental= ";
 		if (Departmental == true)
 			cout << "Yes\n" << "Origin Department" << Origin[0] << endl;
 		else

@@ -253,7 +253,7 @@ int main() {
 			case '7': {
 				int torate = 0;
 				User.ListRegistered();
-				if (UserCart.CartStatus() == 0)
+				if (User.RegisterStatus() == 0)
 					break;
 				cout << "Please Select Which Item You Want To Rate (1-" << ((User.RegisterStatus() == -1) ? 99 : User.RegisterStatus()) << ") :"; cin >> torate; cin.ignore();
 				if (User.getInfo(torate) == true){
