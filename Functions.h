@@ -1,8 +1,5 @@
 #ifndef FUNCTION_REQ
 #define FUNCTION_REQ
-#ifndef CourseData
-#include "CourseData.h"
-#endif
 #ifndef SC_EXTENSION
 #include "SoftwareCourses.h"
 #endif 
@@ -19,5 +16,10 @@
 double ApplyDiscount(OnlineCourse& ClassName);
 int powof10(int i);
 void fixChoice(char* input);
-OnlineCourse* findCourse(string Prefix, int id);
+template <typename Category>Category* findCourse2(string Prefix, int id, Category* CategoryName, int Max) {
+	for (int i = 0; i < Max; i++)
+		if (CategoryName[i].checkPrefixID(Prefix, id) == true)
+			return &CategoryName[i];
+	return nullptr;
+}
 #endif

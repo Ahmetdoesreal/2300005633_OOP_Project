@@ -16,24 +16,4 @@ void fixChoice(char* input) {
 	if (*input >= 'A' && *input <= 'Z')
 		*input = *input - 'A' + 'a';
 }
-OnlineCourse* findCourse(string Prefix, int id) {
-	for (int i = 0; i < MAX_SOFT; i++)
-		if (Software[i].checkPrefixID(Prefix, id) == true)
-			return &Software[i];
-		else {}
-	for (int i = 0; i < MAX_ELEC; i++)
-		if (Elective[i].checkPrefixID(Prefix, id) == true)
-			return &Elective[i];
-		else {}
-	for (int i = 0; i < MAX_PROF; i++)
-		if (Professional[i].checkPrefixID(Prefix, id) == true)
-			return &Professional[i];
-		else {}
-	for (int i = 0; i < MAX_LANG; i++)
-		if (Language[i].checkPrefixID(Prefix, id) == true)
-			return &Language[i];
-		else {}
-	return nullptr;
-}
-
 #endif
