@@ -15,10 +15,11 @@ public:
 	Cart();
 	bool CartInsert(OnlineCourse* InputCourse);
 	void RemoveCart(int index);
+	//void RemoveCart_bak(int index);
 	void ViewCart();
 	bool RegisterItems(Student& User);
 private:
 	int inCart;
-	OnlineCourse* CartList[3];
+	OnlineCourse* CartList[MAX_CART];
 };
 #endif 

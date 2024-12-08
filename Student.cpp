@@ -21,14 +21,14 @@ int Student::RegisterStatus() {
 		switch (Registered.count)
 		{
 		case 0:return 0;
-		case 99:return -1;
+		case MAX_REGISTER:return -1;
 		default:return Registered.count;
 		}
 	}
 Student::Student() {
 		info[0] = "undefinedName", info[1] = "undefinedSurname", info[2] = "undefinedAdress", card.cardholderfullname = "undefinedCardHolder", card.cvv = 0, card.date[0] = 01, card.date[1] = 25;
 		Registered.count = 0;
-		for (int i = 0; i < 99; i++)
+		for (int i = 0; i < MAX_REGISTER; i++)
 		{
 			Registered.Courses[i].info = nullptr;
 			Registered.Courses[i].rategiven = -1;
@@ -41,13 +41,13 @@ Student::Student() {
 Student::Student(string name, string surname, string mail) {
 		info[0] = name, info[1] = surname, info[2] = mail, card.cardholderfullname = "undefinedCardHolder", card.cvv = 0, card.date[0] = 01, card.date[1] = 25;
 		Registered.count = 0;
-		for (int i = 0; i < 99; i++)
+		for (int i = 0; i < MAX_REGISTER; i++)
 			Registered.Courses[i].info = nullptr;
 		for (int i = 0; i < 4; i++)
 			card.four[i] = 0;
 	}
 Student::~Student() {
-		cout << "\nLogged Out!";
+		cout << "\nLogged Out!\n";
 	}
 void Student::EnterInfo(int id, string infoIn) {
 		switch (id)
@@ -94,7 +94,7 @@ void Student::ListRegistered() {
 		}
 	}
 void Student::RegisterCourse(OnlineCourse* InputCourse) {
-		if (Registered.count >= 99) {
+		if (RegisterStatus()==-1) {
 			cout << "Maximum Registered Courses Reached\nCan not Register anymore!" << endl;
 			return;
 		}
@@ -104,7 +104,7 @@ void Student::RegisterCourse(OnlineCourse* InputCourse) {
 			return;
 		}
 		Registered.Courses[Registered.count].info = InputCourse;
-		cout << "\nSuccesfully Registered Course in Register Slot " << ++Registered.count << " of 99" << endl;
+		cout << "\nSuccesfully Registered Course in Register Slot " << ++Registered.count << " of "<<MAX_REGISTER << endl;
 	}
 bool Student::detectDuplicate(OnlineCourse* InputCourse) {
 		for (int i = 0; i < Registered.count; i++)

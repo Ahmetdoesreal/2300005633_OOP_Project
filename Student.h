@@ -7,9 +7,12 @@
 
 #ifndef STUDENT_EXTENSION
 #define STUDENT_EXTENSION
+//student class
 class Student
 {
 public:
+	//operator overladings
+	//
 	friend istream& operator>> (istream& input, Student& stu);
 	friend ostream& operator<< (ostream& output, Student& stu);
 	void rateCourse(int index);
@@ -32,7 +35,7 @@ private:
 			int rategiven;
 			bool isRated;
 			OnlineCourse* info;
-		}Courses[99]{};
+		}Courses[MAX_REGISTER]{};
 	}Registered;
 	struct BillingInfo {
 		int four[4]{};

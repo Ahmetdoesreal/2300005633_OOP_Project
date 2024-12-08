@@ -11,7 +11,7 @@ bool Cart::detectDuplicate(OnlineCourse* InputCourse) {
 int Cart::CartStatus() {
 		switch (inCart)
 		{
-		case 3:return -1;
+		case MAX_CART:return -1;
 		default:return inCart;
 		}
 	}
@@ -25,7 +25,7 @@ double Cart::PayPrice() {
 	}
 Cart::Cart() {
 		inCart = 0;
-		for (int i = 0; i < 3; i++)
+		for (int i = 0; i < MAX_CART; i++)
 		{
 			CartList[i] = nullptr;
 		}
@@ -52,41 +52,52 @@ bool Cart::CartInsert(OnlineCourse* InputCourse) {
 		return true;
 	}
 void Cart::RemoveCart(int index) {
-		if (index - 1 > inCart) {
-			cout << "The Cart does not contain that item\n";
-			return;
-		}
-		switch (index)
-		{
-		case 1:
-			switch (inCart)
-			{
-			case 1:CartList[index - 1] = nullptr; inCart--; break;
-			case 2:CartList[index - 1] = CartList[index]; CartList[index] = nullptr; inCart--; break;
-			case 3:CartList[index - 1] = CartList[index]; CartList[index] = CartList[index + 1]; CartList[index + 1] = nullptr; inCart--; break;
-			default:
-				cout << "There has been an error occured.Please contact Administrator.\a"; break;
-			}
-			break;
-		case 2:
-			switch (inCart)
-			{
-			case 2:CartList[index] = nullptr; inCart--; break;
-			case 3:CartList[index - 1] = CartList[index]; CartList[index] = nullptr; inCart--; break;
-			default:
-				cout << "There has been an error occured.Please contact Administrator.\a"; break;
-			}
-			break;
-		case 3:
-			switch (inCart)
-			{
-			case 3:CartList[index - 1] = nullptr; inCart--; break;
-			default:cout << "There has been an error occured.Please contact Administrator.\a";
-				break;
-			}
-			break;
-		}
+	if (index <= 0||index-- > inCart) {
+		cout << "Invalid Index";
+		return;
 	}
+	for (int i = index; i < inCart; i++)
+	{
+		CartList[i] = CartList[i + 1];
+	}
+	CartList[--inCart] = nullptr;
+}
+//void Cart::RemoveCart_bak(int index) {
+//	if (index - 1 > inCart) {
+//		cout << "The Cart does not contain that item\n";
+//		return;
+//	}
+//	switch (index)
+//	{
+//	case 1:
+//		switch (inCart)
+//		{
+//		case 1:CartList[index - 1] = nullptr; inCart--; break;
+//		case 2:CartList[index - 1] = CartList[index]; CartList[index] = nullptr; inCart--; break;
+//		case 3:CartList[index - 1] = CartList[index]; CartList[index] = CartList[index + 1]; CartList[index + 1] = nullptr; inCart--; break;
+//		default:
+//			cout << "There has been an error occured.Please contact Administrator.\a"; break;
+//		}
+//		break;
+//	case 2:
+//		switch (inCart)
+//		{
+//		case 2:CartList[index] = nullptr; inCart--; break;
+//		case 3:CartList[index - 1] = CartList[index]; CartList[index] = nullptr; inCart--; break;
+//		default:
+//			cout << "There has been an error occured.Please contact Administrator.\a"; break;
+//		}
+//		break;
+//	case 3:
+//		switch (inCart)
+//		{
+//		case 3:CartList[index - 1] = nullptr; inCart--; break;
+//		default:cout << "There has been an error occured.Please contact Administrator.\a";
+//			break;
+//		}
+//		break;
+//	}
+//}
 void Cart::ViewCart() {
 		if (CartStatus() == 0)
 		{

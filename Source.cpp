@@ -205,7 +205,7 @@ int main() {
 				UserCart.ViewCart();
 				if (UserCart.CartStatus() == 0)
 					break;
-				cout << "Please Select Which Item You Want To Remove From Cart (1-" << ((UserCart.CartStatus()==-1)?3: UserCart.CartStatus()) << ") :"; cin >> toremove; cin.ignore();
+				cout << "Please Select Which Item You Want To Remove From Cart (1-" << ((UserCart.CartStatus()==-1)?MAX_CART: UserCart.CartStatus()) << ") :"; cin >> toremove; cin.ignore();
 				UserCart.RemoveCart(toremove);
 			}break;
 			case '7': {
@@ -213,7 +213,7 @@ int main() {
 				User.ListRegistered();
 				if (User.RegisterStatus() == 0)
 					break;
-				cout << "Please Select Which Item You Want To Rate (1-" << ((User.RegisterStatus() == -1) ? 99 : User.RegisterStatus()) << ") :"; cin >> torate; cin.ignore();
+				cout << "Please Select Which Item You Want To Rate (1-" << ((User.RegisterStatus() == -1) ? MAX_REGISTER : User.RegisterStatus()) << ") :"; cin >> torate; cin.ignore();
 				if (User.getInfo(torate) == true){
 					cout << "\nCourse Already Rated!\nWould You like to change your rate? \n[Y] Yes - [N] No "; cin >> choice; fixChoice(&choice), cin.ignore();
 					if (choice != 'y'){
