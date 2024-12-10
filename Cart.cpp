@@ -1,56 +1,54 @@
 #ifndef CART_EXTENSION
 #include "Cart.h"
 bool Cart::detectDuplicate(OnlineCourse* InputCourse) {
-		for (int i = 0; i < inCart; i++)
-		{
-			if (CartList[i] == InputCourse)
-				return true;
+	for (int i = 0; i < inCart; i++)//check the cart contents 
+	{
+		if (CartList[i] == InputCourse)//check the pointing adress of pointers 
+			return true;//if same return true
+	}
+	return false;//if the cart contents are not the same with the parameter pointer return false
+}
+int Cart::CartStatus() {
+	switch (inCart){//check incart count
+	case MAX_CART:return -1;
+	default:return inCart;
+	}
+}
+double Cart::PayPrice() {
+	double pr = 0;//price value
+	for (int i = 0; i < inCart; i++)
+	{
+		pr += ApplyDiscount(*CartList[i]);//increase price value with the calulated value
+	}
+	return pr;//reutrn price value
+}
+Cart::Cart() {
+	inCart = 0;
+	for (int i = 0; i < MAX_CART; i++)
+	{
+		CartList[i] = nullptr;
+	}
+}
+bool Cart::CartInsert(OnlineCourse* InputCourse) {
+	if (CartStatus() != -1) {//if the car is full
+		if (InputCourse->checkCapacity() >= 1){//and there is capacity in the course
+			if (detectDuplicate(InputCourse) != false) {//and the course already in the registered slots
+				cout << "\nItem Exists In Cart\n";//warn user
+				return false;//and return with not successfull
+			}
+			CartList[inCart] = InputCourse;
+			inCart++;
 		}
+		else return false;
+	}
+	else
+	{
+		cout << "Cart full!\nPlease try removing some items or contact your Administrator" << endl;
 		return false;
 	}
-int Cart::CartStatus() {
-		switch (inCart)
-		{
-		case MAX_CART:return -1;
-		default:return inCart;
-		}
-	}
-double Cart::PayPrice() {
-		double pr = 0;
-		for (int i = 0; i < inCart; i++)
-		{
-			pr += ApplyDiscount(*CartList[i]);
-		}
-		return pr;
-	}
-Cart::Cart() {
-		inCart = 0;
-		for (int i = 0; i < MAX_CART; i++)
-		{
-			CartList[i] = nullptr;
-		}
-	}
-bool Cart::CartInsert(OnlineCourse* InputCourse) {
-		if (CartStatus() != -1) {
-			if (InputCourse->checkCapacity() >= 1)
-			{
-				if (detectDuplicate(InputCourse) != false) {
-					cout << "\nItem Exists In Cart\n";
-					return false;
-				}
-				CartList[inCart] = InputCourse;
-				inCart++;
-			}
-			else return false;
-		}
-		else
-		{
-			cout << "Cart full!\nPlease try removing some items or contact your Administrator" << endl;
-			return false;
-		}
-		cout << "\nOperation Successfull\n";
-		return true;
-	}
+	cout << "\nOperation Successfull\n";
+	return true;
+}
 void Cart::RemoveCart(int index) {
 	if (index <= 0||index-- > inCart) {
 		cout << "Invalid Index";
