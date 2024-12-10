@@ -16,6 +16,6 @@ public:
 	void displayInfo() override;
 	bool addStudent() override;
 	int checkCapacity() override;
-	int getCalculatedID() override;
+	//int getCalculatedID() override;
 };
 #endif

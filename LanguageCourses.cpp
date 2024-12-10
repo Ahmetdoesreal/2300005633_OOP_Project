@@ -49,8 +49,8 @@ int LanguageCourses::checkCapacity()
 	{
 		return capacity[0] - capacity[1];
 	}
-int LanguageCourses::getCalculatedID() 
-	{
-		return id + 10000;
-	}
+//int LanguageCourses::getCalculatedID() 
+//	{
+//		return id + 10000;
+//	}
 #endif

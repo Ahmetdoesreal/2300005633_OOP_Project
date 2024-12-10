@@ -50,8 +50,8 @@
 	{
 		return capacity[0] - capacity[1];
 	}
-	int Electives::getCalculatedID()
+	/*int Electives::getCalculatedID()
 	{
 		return id + 10000;
-	}
+	}*/
 #endif

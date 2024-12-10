@@ -147,7 +147,8 @@ int main() {
 				string wholeid="";
 				string prefix="";
 				int id = 0;
-				cout << "Enter The ID of the Course : ";/* cin >>prefix; cin >>id;*/cin >>wholeid;
+				cout << "Enter The ID of the Course : ";/* cin >>prefix; cin >>id;*/
+				cin.ignore();getline(cin, wholeid);
 				for ( int i = 0;  i < wholeid.size();  i++)
 				{//This whole part can be avoided if i divided the selection system.
 					if (wholeid[i] >= '0' && wholeid[i] <= '9') {

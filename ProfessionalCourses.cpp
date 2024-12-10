@@ -50,8 +50,8 @@ int ProfessionalDevelopmentCourses::checkCapacity()
 	{
 		return capacity[0] - capacity[1];
 	}
-int ProfessionalDevelopmentCourses::getCalculatedID() 
-	{
-		return id + 10000;
-	}
+//int ProfessionalDevelopmentCourses::getCalculatedID() 
+//	{
+//		return id + 10000;
+//	}
 #endif
