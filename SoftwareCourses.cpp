@@ -48,10 +48,4 @@ int SoftwareCourses::checkCapacity()
 	{
 		return capacity[0] - capacity[1];//return capacity
 	};
-//used to comppute diffrent class types with integers legacy code
-// 
-//int SoftwareCourses::getCalculatedID() 
-//	{
-//		return id + 10000;
-//	}
 #endif

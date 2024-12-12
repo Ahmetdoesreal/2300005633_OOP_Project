@@ -8,12 +8,15 @@
 #define PREPROCESSOR//definition that acts like a "yes i am already included" flag
 #define _CRT_SECURE_NO_WARNINGS//silences microsofts security warnings
 #define ChangeExitChar '5'//change user information exit char might change later
-#define MAX_SOFT 16//maximum software course count
-#define MAX_LANG 7//maximum language course count
-#define MAX_PROF 16//maximum proffessional courses count
-#define MAX_ELEC 20//maximum elective courses count
-#define MAX_REGISTER 20//maximum amount of courses that user can register to
-#define MAX_CART 12//maximum amount of courses that user can add to the cart
+#define CURRENT_SOFT 16//maximum software course count
+#define CUURENT_LANG 7//maximum language course count
+#define CURRENT_PROF 16//maximum proffessional courses count
+#define CURRENT_ELEC 16//maximum elective courses count
+
+//max register and cart count is set to 3 due to low demand for registration slots :(
+
+#define MAX_REGISTER 3//maximum amount of courses that user can register to
+#define MAX_CART 3//maximum amount of courses that user can add to the cart
 #if MAX_CART>MAX_REGISTER//checks if the cart is greater than the register slots (since user cant do anything about it i decided to do not let the compiler compile if the values are nonsense)
 #error Maximum Cart Value Cant Be Greater Than The Maximum Register Slots
 //error statements ^^^^^^

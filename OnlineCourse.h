@@ -12,6 +12,9 @@ public:
 	double price;
 	float discount;
 	//constructors
+	
+	//Parameter List
+	//Total Capacity,Attending Students,Total Rate,Rated People,Duration,Level,ID,Course Name,Instructor Name,Prerequisites,Price,Discount Rate
 	OnlineCourse(int capacityavalible, int capacityoccupied, int ratei, int ratedppli, int durationi, int leveli, int idi, string namei, string instructori, string prereqsi, double pricei, float discounti);
 	OnlineCourse();
 	//functions
@@ -21,8 +24,6 @@ public:
 	virtual bool addStudent() = 0;
 	//Checks Course Capacity
 	virtual int checkCapacity() = 0;
-	//virtual int getCalculatedID() = 0; unused
-	
 	//Checks Courses ID with Prefix, Parameters : Prefix, ID
 	virtual bool checkPrefixID(string checkprefix, int checkid) = 0;
 	//Adds a new rate Parameters: Rate

@@ -25,6 +25,5 @@ public:
 	bool addStudent() override;
 	//Checks Course Capacity
 	int checkCapacity() override;
-	//int getCalculatedID() override; unused
 };
 #endif

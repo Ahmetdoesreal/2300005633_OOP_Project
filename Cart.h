@@ -21,6 +21,7 @@ public:
 	//Function to get Final Price(Total Discounted)
 	double PayPrice();
 	//Function to Add to Cart Parameter Course Object Pointer
+	//Return True==Success!
 	bool CartInsert(OnlineCourse* InputCourse);
 	//Function to remove from cart Parameter : index to remove
 	void RemoveCart(int index);
@@ -28,7 +29,9 @@ public:
 
 	//function to view cart contents
 	void ViewCart();
-	//function to register items to the user data Parameter User Data Object Adress
+	//function to register items to the user data 
+	//Parameter User Data Object Adress
+	//Return TRUE==SUCCESS
 	bool RegisterItems(Student& User);
 private:
 	//private variables

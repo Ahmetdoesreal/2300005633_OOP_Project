@@ -28,7 +28,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cart.h" />
-    <ClInclude Include="CourseData.h" />
     <ClInclude Include="Electives.h" />
     <ClInclude Include="Functions.h" />
     <ClInclude Include="LanguageCourses.h" />

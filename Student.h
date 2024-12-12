@@ -50,10 +50,15 @@ private:
 	string info[3];
 	//Registration information
 	struct RegisterInfo {
+		//registered course count
 		int count = 0;
+		//course data & references storage
 		struct Course{
+			//Amount Of rate Given
 			int rategiven;
+			//Is there a rate at all
 			bool isRated;
+			//pointer to course
 			OnlineCourse* info;
 		}Courses[MAX_REGISTER]{};
 	}Registered;
@@ -65,6 +70,7 @@ private:
 		int cvv{};
 		//[0]=Month,[1]=Year
 		int date[2]{};
+		//Card Holder Name
 		string cardholderfullname;
 	}card;
 };

@@ -6,10 +6,10 @@ void Student::rateCourse(int index) {
 		return;//return if out of range
 	int rate = 0;
 	do {
-		cout << "Enter Your Rating 0-5 (-1 to cancel) :"; cin >> rate; cin.ignore();//prompt user and get input
+		cout << "Enter Your Rating 1-5 (-1 to cancel) :"; cin >> rate; cin.ignore();//prompt user and get input
 		if (rate == -1)//if rate is -1 (cancel value) 
 			return;//return
-	} while ((rate < 0) || (rate > 5));//continue asking for rate until user provides valid input
+	} while ((rate < 1) || (rate > 5));//continue asking for rate until user provides valid input
 	if (getInfo(index) == true)//get info about course's rate status(rated or not)
 		Registered.Courses[index - 1].info->changeRate(rate - Registered.Courses[index - 1].rategiven);//call changerate function with the difference between the new rating and old one as a parameter
 	else
@@ -32,7 +32,7 @@ Student::Student() {
 	Registered.count = 0;
 	for (int i = 0; i < MAX_REGISTER; i++)
 	{       
-                //set up registered courses array values
+        //set up registered courses array values
 		Registered.Courses[i].info = nullptr;
 		Registered.Courses[i].rategiven = -1;
 		Registered.Courses[i].isRated = false;
@@ -183,7 +183,7 @@ istream& operator>> (istream& input, Student& stu)
 ostream& operator<< (ostream& output, Student& stu)
 {
 	printf("Billing Information\nCard Number = %.4d %.4d %.4d %.4d\nCVV = %.3d\nExpiration Date = %.2d/%.2d\nCard Holder Name : ", stu.card.four[0], stu.card.four[1], stu.card.four[2], stu.card.four[3], stu.card.cvv, stu.card.date[0], stu.card.date[1]);//print out info
-	cout << stu.card.cardholderfullname;//print info
+	cout << stu.card.cardholderfullname<<endl;//print info
 	return output;//return output stream
 }
 #endif

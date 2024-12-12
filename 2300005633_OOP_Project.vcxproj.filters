@@ -36,9 +36,6 @@
     <ClInclude Include="Functions.h">
       <Filter>Üst Bilgi Dosyaları</Filter>
     </ClInclude>
-    <ClInclude Include="CourseData.h">
-      <Filter>Üst Bilgi Dosyaları</Filter>
-    </ClInclude>
     <ClInclude Include="Student.h">
       <Filter>Üst Bilgi Dosyaları</Filter>
     </ClInclude>
