@@ -1,0 +1,3181 @@
+Microsoft Windows [Version 10.0.19045.5247]
+(c) Microsoft Corporation. Tüm hakları saklıdır.
+
+C:\Users\adeni\Documents\GitHub\2300005633_OOP_Project>cd x64
+
+C:\Users\adeni\Documents\GitHub\2300005633_OOP_Project\x64>cd Debug
+
+C:\Users\adeni\Documents\GitHub\2300005633_OOP_Project\x64\Debug>2300005633_OOP_Project.exe
+Enter Login Information
+Name:           Ahmet Deniz
+Surname:        Sezg,n
+Mail Adress:    a.deniz.sezgin@gmail.com
+
+
+Welcome Ahmet Deniz Sezg,n
+logged in as "a.deniz.sezgin@gmail.com"
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+1
+Please Choose What Information to change
+1-User Name
+2-User Surname
+3-User Mail Adress
+4-Enter Payment Information
+5 - Go Back2
+Enter New Surname:Sezgin
+Old Surname "Sezg,n"
+New Surname"Sezgin"
+Confirm Action(Y\N)y
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+1
+Please Choose What Information to change
+1-User Name
+2-User Surname
+3-User Mail Adress
+4-Enter Payment Information
+5 - Go Back1
+Enter New User Name:Mustafa Can
+Old Name "Ahmet Deniz"
+New Name"Mustafa Can"
+Confirm Action(Y\N)y
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+1
+Please Choose What Information to change
+1-User Name
+2-User Surname
+3-User Mail Adress
+4-Enter Payment Information
+5 - Go Back2
+Enter New Surname:Sezgin
+Old Surname "Sezgin"
+New Surname"Sezgin"
+Confirm Action(Y\N)n
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+1
+Please Choose What Information to change
+1-User Name
+2-User Surname
+3-User Mail Adress
+4-Enter Payment Information
+5 - Go Back3
+Enter New Mail Adress:c.sezgin@eges.com.tr
+Old Adress "a.deniz.sezgin@gmail.com"
+New Adress"c.sezgin@eges.com.tr"
+Confirm Action(Y\N)y
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+2
+User Name: Mustafa Can
+User Surname: Sezgin
+User Mail: c.sezgin@eges.com.tr
+The user has not registered to any courses.
+Cart Is Empty
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+3
+Select Course Category:
+1-Software Courses
+2-Language Courses
+3-Professional Development Courses
+4-Elective Courses
+5-Go Back
+2
+Course 1 for Language
+Course Code: LANG1001
+Course Name:    English - I
+Instructor:     Edna Mode
+Prerequisites:  None
+Capacity =      [82/40]
+Rate =          2.8125(16)
+Duration =      14
+Price = 450000  Discount Rate = 23%
+Level:  1
+Lanugage:English
+Native Teacher=Yes
+
+Course Full!!
+
+
+Course 2 for Language
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [32/50]
+Rate =          3.08(25)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+
+Course 3 for Language
+Course Code: LANG1003
+Course Name:    Turkish - I
+Instructor:     Wednesday Adams
+Prerequisites:  None
+Capacity =      [80/80]
+Rate =          3.16667(18)
+Duration =      12
+Price = 570000  Discount Rate = 24%
+Level:  1
+Lanugage:Turkish
+Native Teacher=No
+
+Course Full!!
+
+
+Course 4 for Language
+Course Code: LANG2001
+Course Name:    English - II
+Instructor:     Ethan Hunt
+Prerequisites:  LANG1001
+Capacity =      [20/40]
+Rate =          2.6(5)
+Duration =      20
+Price = 130000  Discount Rate = 15%
+Level:  2
+Lanugage:English
+Native Teacher=Yes
+
+Course 5 for Language
+Course Code: LANG3001
+Course Name:    Russian - I
+Instructor:     Ivan Vanko
+Prerequisites:  None
+Capacity =      [12/20]
+Rate =          3.33333(3)
+Duration =      40
+Price = 100000  Discount Rate = 23%
+Level:  3
+Lanugage:Russian
+Native Teacher=Yes
+
+Course 6 for Language
+Course Code: LANG3002
+Course Name:    Italian - I
+Instructor:     Vito Corleone
+Prerequisites:  None
+Capacity =      [19/20]
+Rate =          2.94444(18)
+Duration =      10
+Price = 530000  Discount Rate = 23%
+Level:  3
+Lanugage:Italian
+Native Teacher=Yes
+
+Course 7 for Language
+Course Code: LANG3003
+Course Name:    Turkish - II
+Instructor:     Arif Isik
+Prerequisites:  LANG1003
+Capacity =      [8/80]
+Rate =          2(1)
+Duration =      10
+Price = 20000   Discount Rate = 6%
+Level:  3
+Lanugage:Turkish
+Native Teacher=Yes
+
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course :    LANG1003
+Can't Find Requested Course
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : LANG1003
+
+Course Full!
+Can't Add Requested Course
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : LANG1002
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+In Cart
+Item 1
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [32/50]
+Rate =          3.08(25)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+
+Total Price Of Cart:    770000
+After Discount: 469700
+Average Discount Ratio:39%
+Would You Like To Finish Registering Process And Continue With Payment?
+[Y] Yes - [N] No y
+Enter Billing Information
+Card Number     XXXX_XXXX_XXXX_XXXX
+                0123456789101112
+Expiration Date MM/YY =12 22
+Expired Card!
+Expiration Date MM/YY =12 24
+CVV =532
+Full Name Of Card Holder :Ahmet Deniz Sezgin
+Entered Payment Info
+Billing Information
+Card Number = 0123 4567 8910 1112
+CVV = 532
+Expiration Date = 12/24
+Card Holder Name : Ahmet Deniz Sezgin
+
+Succesfully Registered Course in Register Slot 1 of 3
+
+Total Price of 469700.01 has been transactioned from your Cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+2
+User Name: Mustafa Can
+User Surname: Sezgin
+User Mail: c.sezgin@eges.com.tr
+Registered Courses :
+Course 1
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [33/50]
+Rate =          3.08(25)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+Cart Is Empty
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+7
+Registered Courses :
+Course 1
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [33/50]
+Rate =          3.08(25)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+Please Select Which Item You Want To Rate (1-1) :1
+Enter Your Rating 1-5 (-1 to cancel) :3
+3.08->3.07692
+Rate Updated
+Thank You For Rating
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+7
+Registered Courses :
+Course 1
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [33/50]
+Rate =          3.07692(26)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+Please Select Which Item You Want To Rate (1-1) :1
+
+Course Already Rated!
+Would You like to change your rate?
+[Y] Yes - [N] No y
+Enter Your Rating 1-5 (-1 to cancel) :2
+3.07692->3.03846
+Rate Updated
+Thank You For Rating
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+l
+You Choose To log out please enter "logout" exactly to log out:
+3
+Authentication failed!
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+l
+You Choose To log out please enter "logout" exactly to log out:
+logout
+
+Logged Out!
+Enter Login Information
+Name:           Ahmet Deniz
+Surname:        Sezgin
+Mail Adress:    a.deniz.sezgin@gmail.com
+
+
+Welcome Ahmet Deniz Sezgin
+logged in as "a.deniz.sezgin@gmail.com"
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+1
+Please Choose What Information to change
+1-User Name
+2-User Surname
+3-User Mail Adress
+4-Enter Payment Information
+5 - Go Back4
+Enter Billing Information
+Card Number     XXXX_XXXX_XXXX_XXXX
+                0182 3882 3393 5633
+Expiration Date MM/YY =03/27
+CVV =302
+Full Name Of Card Holder :Mustafa Can Sezgin
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+3
+Select Course Category:
+1-Software Courses
+2-Language Courses
+3-Professional Development Courses
+4-Elective Courses
+5-Go Back
+4
+Course 1 for Elective
+Course Code: PSKU1
+Course Name:    Society and Gender
+Instructor:     George Michael
+Prerequisites:  None
+Capacity =      [14/50]
+Rate =          3.33333(6)
+Duration =      13
+Price = 200000  Discount Rate =         12.5%
+Level:  0       Is it Departmental= No
+Origin Department : Psychology
+
+Course 2 for Elective
+Course Code: MIMU1
+Course Name:    ADVENTURE OF FORM I
+Instructor:     Roberta Flack
+Prerequisites:  None
+Capacity =      [12/50]
+Rate =          3.41667(12)
+Duration =      12
+Price = 410000  Discount Rate =         18%
+Level:  0       Is it Departmental= No
+Origin Department : Architecture
+
+Course 3 for Elective
+Course Code: ISNU4
+Course Name:    Life Culture
+Instructor:     Bonnie Tyler
+Prerequisites:  None
+Capacity =      [13/15]
+Rate =          3.25(8)
+Duration =      14
+Price = 260000  Discount Rate =         15%
+Level:  0       Is it Departmental= No
+Origin Department : Communication Arts
+
+Course 4 for Elective
+Course Code: ISLU5
+Course Name:    Entrepreneurship I
+Instructor:     Frankie Valli
+Prerequisites:  None
+Capacity =      [23/25]
+Rate =          2.875(16)
+Duration =      9
+Price = 460000  Discount Rate =         20.5%
+Level:  0       Is it Departmental= No
+Origin Department : Business Administration
+
+Course 5 for Elective
+Course Code: ITMU6
+Course Name:    Painting
+Instructor:     Laura Branigan
+Prerequisites:  None
+Capacity =      [19/25]
+Rate =          3.0625(16)
+Duration =      11
+Price = 490000  Discount Rate =         21.5%
+Level:  0       Is it Departmental= No
+Origin Department : Communication Designs - Multimedia
+
+Course 6 for Elective
+Course Code: ITMU7
+Course Name:    Sculpture
+Instructor:     Michael Buble
+Prerequisites:  None
+Capacity =      [14/40]
+Rate =          3.28571(7)
+Duration =      13
+Price = 230000  Discount Rate =         13.5%
+Level:  0       Is it Departmental= No
+Origin Department : Communication Designs - Multimedia
+
+Course 7 for Elective
+Course Code: IRDU8
+Course Name:    Civilizations in History
+Instructor:     Bruno Mars
+Prerequisites:  None
+Capacity =      [30/35]
+Rate =          2.7(10)
+Duration =      9
+Price = 270000  Discount Rate =         14.5%
+Level:  0       Is it Departmental= No
+Origin Department : International Relations
+
+Course 8 for Elective
+Course Code: IRDU80
+Course Name:    Literature. Media and Politics
+Instructor:     George Thorogood
+Prerequisites:  None
+Capacity =      [30/40]
+Rate =          3.21429(28)
+Duration =      8
+Price = 900000  Discount Rate =         32%
+Level:  0       Is it Departmental= No
+Origin Department : International Relations
+
+Course 9 for Elective
+Course Code: COM257
+Course Name:    Special Topics in Computer Engineering
+Instructor:     Michael Jackson
+Prerequisites:  Basic IT and programming knowledge. basics of an operational world.
+Capacity =      [21/40]
+Rate =          3.625(8)
+Duration =      8
+Price = 290000  Discount Rate =         12%
+Level:  0       Is it Departmental= Yes
+
+Course 10 for Elective
+Course Code: COM259
+Course Name:    Special Topic in Artificial Intelligence
+Instructor:     Freddie Mercury
+Prerequisites:  None
+Capacity =      [26/30]
+Rate =          2.69231(13)
+Duration =      12
+Price = 350000  Discount Rate =         19%
+Level:  0       Is it Departmental= Yes
+
+Course 11 for Elective
+Course Code: COM261
+Course Name:    Co-op Practice
+Instructor:     Brian May
+Prerequisites:  None
+Capacity =      [12/25]
+Rate =          3.8(5)
+Duration =      12
+Price = 190000  Discount Rate =         11%
+Level:  0       Is it Departmental= Yes
+
+Course 12 for Elective
+Course Code: COM266
+Course Name:    Data Warehouses and Data Mining
+Instructor:     John Deacon
+Prerequisites:  None
+Capacity =      [14/20]
+Rate =          3.4(5)
+Duration =      10
+Price = 170000  Discount Rate =         10%
+Level:  0       Is it Departmental= Yes
+
+Course 13 for Elective
+Course Code: SEN270
+Course Name:    Game Programming
+Instructor:     Gloria Gaynor
+Prerequisites:  None
+Capacity =      [22/30]
+Rate =          2.54545(11)
+Duration =      8
+Price = 280000  Discount Rate =         15%
+Level:  0       Is it Departmental= Yes
+
+Course 14 for Elective
+Course Code: EE840
+Course Name:    Advanced Logic Design
+Instructor:     Lena Raine
+Prerequisites:  None
+Capacity =      [11/40]
+Rate =          3.125(8)
+Duration =      13
+Price = 250000  Discount Rate =         14.5%
+Level:  0       Is it Departmental= Yes
+
+Course 15 for Elective
+Course Code: MCB1003
+Course Name:    Calculus - III
+Instructor:     Sade Adu
+Prerequisites:  None
+Capacity =      [12/30]
+Rate =          3.5(6)
+Duration =      14
+Price = 210000  Discount Rate =         13%
+Level:  1       Is it Departmental= Yes
+
+Course 16 for Elective
+Course Code: EE3202
+Course Name:    Logic Design
+Instructor:     Pharrell Williams
+Prerequisites:  None
+Capacity =      [22/50]
+Rate =          3.1(10)
+Duration =      14
+Price = 310000  Discount Rate =         17%
+Level:  3       Is it Departmental= Yes
+
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : EE3202
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+3
+Select Course Category:
+1-Software Courses
+2-Language Courses
+3-Professional Development Courses
+4-Elective Courses
+5-Go Back
+1
+Course 1 for Software
+Course Code: SOFT1001
+Course Name:    Programming - I
+Instructor:     T-800
+Prerequisites:  None
+Capacity =      [120/90]
+Rate =          3(33)
+Duration =      14
+Price =         990000  Discount Rate =         40 %
+Level:          1
+Lanugage:       C
+Environment:    Visual Studio 2022
+
+Course Full!!
+
+
+Course 2 for Software
+Course Code: SOFT2001
+Course Name:    Programming - II
+Instructor:     T-1000
+Prerequisites:  SOFT1001
+Capacity =      [58/90]
+Rate =          2.48(25)
+Duration =      14
+Price =         620000  Discount Rate =         32 %
+Level:          2
+Lanugage:       C
+Environment:    GCC (editor depends on student preference)
+
+Course 3 for Software
+Course Code: SOFT3001
+Course Name:    Object Oriented Programming - I
+Instructor:     HAL9000
+Prerequisites:  None
+Capacity =      [69/120]
+Rate =          2.95833(48)
+Duration =      21
+Price =         1.42e+06        Discount Rate =         58.5 %
+Level:          3
+Lanugage:       C++
+Environment:    Visual Studio 2022
+
+Course 4 for Software
+Course Code: SOFT4001
+Course Name:    Object Oriented Programming - II
+Instructor:     Bender Bending Rodrigez
+Prerequisites:  SOFT3001
+Capacity =      [39/120]
+Rate =          2.70968(31)
+Duration =      21
+Price =         840000  Discount Rate =         41.5 %
+Level:          4
+Lanugage:       C++
+Environment:    GCC (editor depends on student preference)
+
+Course 5 for Software
+Course Code: SOFT5001
+Course Name:    .NET Development - I
+Instructor:     Calculon
+Prerequisites:  None
+Capacity =      [19/80]
+Rate =          3.61538(13)
+Duration =      28
+Price =         470000  Discount Rate =         27 %
+Level:          5
+Lanugage:       C#
+Environment:    Visual Studio 2022
+
+Course 6 for Software
+Course Code: SOFT6001
+Course Name:    .NET Development - II
+Instructor:     Metal Sonic
+Prerequisites:  SOFT5001
+Capacity =      [20/80]
+Rate =          3.72727(11)
+Duration =      28
+Price =         410000  Discount Rate =         25 %
+Level:          6
+Lanugage:       C#
+Environment:    Visual Studio 2022
+
+Course 7 for Software
+Course Code: SOFT7001
+Course Name:    Scripting - I
+Instructor:     WALL-E
+Prerequisites:  None
+Capacity =      [49/50]
+Rate =          3.4(5)
+Duration =      7
+Price =         170000  Discount Rate =         8.5 %
+Level:          7
+Lanugage:       Python
+Environment:    Pycharm
+
+Course 8 for Software
+Course Code: SOFT7002
+Course Name:    Platform Independent Programming - I
+Instructor:     Ultron
+Prerequisites:  SOFT2001
+Capacity =      [42/30]
+Rate =          4.25(4)
+Duration =      14
+Price =         170000  Discount Rate =         11 %
+Level:          7
+Lanugage:       Java
+Environment:    Visual Studio 2022
+
+Course Full!!
+
+
+Course 9 for Software
+Course Code: SOFT7003
+Course Name:    Low Level Programming - I
+Instructor:     GLaDOS
+Prerequisites:  None
+Capacity =      [7/20]
+Rate =          3.2(5)
+Duration =      14
+Price =         160000  Discount Rate =         12 %
+Level:          7
+Lanugage:       Assembly
+Environment:    GNU Assembler
+
+Course 10 for Software
+Course Code: SOFT7004
+Course Name:    Website Development - I
+Instructor:     Wheatley
+Prerequisites:  None
+Capacity =      [50/50]
+Rate =          3.45455(22)
+Duration =      10
+Price =         760000  Discount Rate =         27 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+
+Course Full!!
+
+
+Course 11 for Software
+Course Code: SOFT7005
+Course Name:    Bash automation
+Instructor:     Rick Sanchez
+Prerequisites:  SOFT7001
+Capacity =      [19/20]
+Rate =          3.14286(7)
+Duration =      16
+Price =         220000  Discount Rate =         15 %
+Level:          7
+Lanugage:       Bash
+Environment:    UNIX-based OS recommended
+
+Course 12 for Software
+Course Code: SOFT7006
+Course Name:    Windows automation
+Instructor:     Gordon Freeman
+Prerequisites:  SOFT7001
+Capacity =      [19/20]
+Rate =          4.16667(6)
+Duration =      16
+Price =         250000  Discount Rate =         14 %
+Level:          7
+Lanugage:       Batch
+Environment:    Windows
+
+Course 13 for Software
+Course Code: SOFT7101
+Course Name:    Scripting - II
+Instructor:     Tony Stark
+Prerequisites:  None
+Capacity =      [49/50]
+Rate =          3.66667(3)
+Duration =      7
+Price =         110000  Discount Rate =         6.5 %
+Level:          7
+Lanugage:       Python
+Environment:    Student can Choose
+
+Course 14 for Software
+Course Code: SOFT7102
+Course Name:    Platform Independent Programming - II
+Instructor:     Eugene Kaspersky
+Prerequisites:  SOFT2001
+Capacity =      [42/60]
+Rate =          2.83333(24)
+Duration =      14
+Price =         680000  Discount Rate =         31 %
+Level:          7
+Lanugage:       Java
+Environment:    Student can Choose
+
+Course 15 for Software
+Course Code: SOFT7103
+Course Name:    Low Level Programming - II
+Instructor:     Masatoshi Shima
+Prerequisites:  None
+Capacity =      [36/20]
+Rate =          3.23333(30)
+Duration =      14
+Price =         970000  Discount Rate =         37 %
+Level:          7
+Lanugage:       Assembly
+Environment:    GNU Assembler
+
+Course Full!!
+
+
+Course 16 for Software
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [44/50]
+Rate =          3(32)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT7104
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+2
+User Name: Ahmet Deniz
+User Surname: Sezgin
+User Mail: a.deniz.sezgin@gmail.com
+The user has not registered to any courses.
+In Cart
+Item 1
+Course Code: EE3202
+Course Name:    Logic Design
+Instructor:     Pharrell Williams
+Prerequisites:  None
+Capacity =      [22/50]
+Rate =          3.1(10)
+Duration =      14
+Price = 310000  Discount Rate =         17%
+Level:  3       Is it Departmental= Yes
+Item 2
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [44/50]
+Rate =          3(32)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+
+Total Price Of Cart:    1.27e+06
+After Discount: 852500
+Average Discount Ratio:32.874%
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+3
+Select Course Category:
+1-Software Courses
+2-Language Courses
+3-Professional Development Courses
+4-Elective Courses
+5-Go Back
+3
+Course 1 for Professional Development
+Course Code: PROF5001
+Course Name:    Command Line Programs
+Instructor:     Steve Ballmer
+Prerequisites:  SOFT2001
+Capacity =      [44/40]
+Rate =          3.25(32)
+Duration =      18
+Price = 1.04e+06        Discount Rate = 41%
+Level:  5
+Topics:Console Application
+Certification=Yes
+
+Course Full!!
+
+
+Course 2 for Professional Development
+Course Code: PROF5010
+Course Name:    Introduction to Automation
+Instructor:     Jeff Bezos
+Prerequisites:  SOFT2001
+Capacity =      [34/50]
+Rate =          2.66667(27)
+Duration =      18
+Price = 720000  Discount Rate = 36%
+Level:  5
+Topics:Unattended Applications
+Certification=No
+
+Course 3 for Professional Development
+Course Code: PROF5020
+Course Name:    Network Administration
+Instructor:     Mark Zuckerberg
+Prerequisites:  SOFT4001
+Capacity =      [54/60]
+Rate =          2.85714(7)
+Duration =      24
+Price = 200000  Discount Rate = 19%
+Level:  5
+Topics:Network Management
+Certification=No
+
+Course 4 for Professional Development
+Course Code: PROF5030
+Course Name:    File Types
+Instructor:     Bill Gates
+Prerequisites:  SOFT4001
+Capacity =      [11/30]
+Rate =          3.6(5)
+Duration =      24
+Price = 180000  Discount Rate = 17%
+Level:  5
+Topics:File Structures
+Certification=Yes
+
+Course 5 for Professional Development
+Course Code: PROF6001
+Course Name:    Storing Images
+Instructor:     Jawed Karim
+Prerequisites:  SOFT5001
+Capacity =      [39/40]
+Rate =          2.72727(22)
+Duration =      30
+Price = 600000  Discount Rate = 37%
+Level:  6
+Topics:Image Optimization
+Certification=No
+
+Course 6 for Professional Development
+Course Code: PROF6002
+Course Name:    Parallel Processing
+Instructor:     Alan Turing
+Prerequisites:  SOFT4001
+Capacity =      [34/50]
+Rate =          2.75(20)
+Duration =      30
+Price = 550000  Discount Rate = 35%
+Level:  6
+Topics:Multicore Programming
+Certification=Yes
+
+Course 7 for Professional Development
+Course Code: PROF6010
+Course Name:    Designing UI
+Instructor:     Steve Jobs
+Prerequisites:  None
+Capacity =      [13/20]
+Rate =          2.84615(13)
+Duration =      6
+Price = 370000  Discount Rate = 16%
+Level:  6
+Topics:User Interfaces
+Certification=Yes
+
+Course 8 for Professional Development
+Course Code: PROF6020
+Course Name:    Database Administration
+Instructor:     Aaron Swartz
+Prerequisites:  None
+Capacity =      [19/40]
+Rate =          2.8(5)
+Duration =      12
+Price = 140000  Discount Rate = 11%
+Level:  6
+Topics:Database Management
+Certification=Yes
+
+Course 9 for Professional Development
+Course Code: PROF7001
+Course Name:    Memory Management
+Instructor:     Dave Plummer
+Prerequisites:  SOFT2001
+Capacity =      [21/40]
+Rate =          3(16)
+Duration =      12
+Price = 480000  Discount Rate = 22%
+Level:  7
+Topics:Memory Management
+Certification=No
+
+Course 10 for Professional Development
+Course Code: PROF7002
+Course Name:    3D Graphics Calculation
+Instructor:     Gabe Newell
+Prerequisites:  None
+Capacity =      [30/20]
+Rate =          2.42857(7)
+Duration =      12
+Price = 170000  Discount Rate = 13%
+Level:  7
+Topics:3D Graphics
+Certification=No
+
+Course Full!!
+
+
+Course 11 for Professional Development
+Course Code: PROF7010
+Course Name:    Compression Methods
+Instructor:     Igor Pavlov
+Prerequisites:  PROF5030
+Capacity =      [48/50]
+Rate =          3(26)
+Duration =      12
+Price = 780000  Discount Rate = 32%
+Level:  7
+Topics:Compression Algorithms
+Certification=No
+
+Course 12 for Professional Development
+Course Code: PROF7020
+Course Name:    Designing IO Devices
+Instructor:     Steve Wozniak
+Prerequisites:  SOFT4001
+Capacity =      [51/60]
+Rate =          2.77778(18)
+Duration =      18
+Price = 500000  Discount Rate = 27%
+Level:  7
+Topics:Input/Output Devices
+Certification=Yes
+
+Course 13 for Professional Development
+Course Code: PROF8001
+Course Name:    Applications of Sensors
+Instructor:     Satoru Iwata
+Prerequisites:  PROF7020
+Capacity =      [20/70]
+Rate =          3(17)
+Duration =      6
+Price = 510000  Discount Rate = 20%
+Level:  8
+Topics:Sensors
+Certification=Yes
+
+Course 14 for Professional Development
+Course Code: PROF8011
+Course Name:    Cyber-Security
+Instructor:     Eugene Kaspersky
+Prerequisites:  None
+Capacity =      [13/20]
+Rate =          3.11111(9)
+Duration =      18
+Price = 280000  Discount Rate = 18%
+Level:  8
+Topics:Cyber-Security
+Certification=Yes
+
+Course 15 for Professional Development
+Course Code: PROF8021
+Course Name:    Advanced Circuit Boards
+Instructor:     Masatoshi Shima
+Prerequisites:  None
+Capacity =      [44/50]
+Rate =          2.74359(39)
+Duration =      18
+Price = 1.07e+06        Discount Rate = 48%
+Level:  8
+Topics:Board Design
+Certification=Yes
+
+Course 16 for Professional Development
+Course Code: PROF8031
+Course Name:    Communicating Devices with Operating System
+Instructor:     Dennis Ritchie
+Prerequisites:  PROF7020
+Capacity =      [19/50]
+Rate =          3.125(8)
+Duration =      12
+Price = 250000  Discount Rate = 14%
+Level:  8
+Topics:Drivers
+Certification=No
+
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+3
+Select Course Category:
+1-Software Courses
+2-Language Courses
+3-Professional Development Courses
+4-Elective Courses
+5-Go Back
+2
+Course 1 for Language
+Course Code: LANG1001
+Course Name:    English - I
+Instructor:     Edna Mode
+Prerequisites:  None
+Capacity =      [82/40]
+Rate =          2.8125(16)
+Duration =      14
+Price = 450000  Discount Rate = 23%
+Level:  1
+Lanugage:English
+Native Teacher=Yes
+
+Course Full!!
+
+
+Course 2 for Language
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [33/50]
+Rate =          3.03846(26)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+
+Course 3 for Language
+Course Code: LANG1003
+Course Name:    Turkish - I
+Instructor:     Wednesday Adams
+Prerequisites:  None
+Capacity =      [80/80]
+Rate =          3.16667(18)
+Duration =      12
+Price = 570000  Discount Rate = 24%
+Level:  1
+Lanugage:Turkish
+Native Teacher=No
+
+Course Full!!
+
+
+Course 4 for Language
+Course Code: LANG2001
+Course Name:    English - II
+Instructor:     Ethan Hunt
+Prerequisites:  LANG1001
+Capacity =      [20/40]
+Rate =          2.6(5)
+Duration =      20
+Price = 130000  Discount Rate = 15%
+Level:  2
+Lanugage:English
+Native Teacher=Yes
+
+Course 5 for Language
+Course Code: LANG3001
+Course Name:    Russian - I
+Instructor:     Ivan Vanko
+Prerequisites:  None
+Capacity =      [12/20]
+Rate =          3.33333(3)
+Duration =      40
+Price = 100000  Discount Rate = 23%
+Level:  3
+Lanugage:Russian
+Native Teacher=Yes
+
+Course 6 for Language
+Course Code: LANG3002
+Course Name:    Italian - I
+Instructor:     Vito Corleone
+Prerequisites:  None
+Capacity =      [19/20]
+Rate =          2.94444(18)
+Duration =      10
+Price = 530000  Discount Rate = 23%
+Level:  3
+Lanugage:Italian
+Native Teacher=Yes
+
+Course 7 for Language
+Course Code: LANG3003
+Course Name:    Turkish - II
+Instructor:     Arif Isik
+Prerequisites:  LANG1003
+Capacity =      [8/80]
+Rate =          2(1)
+Duration =      10
+Price = 20000   Discount Rate = 6%
+Level:  3
+Lanugage:Turkish
+Native Teacher=Yes
+
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : LANG1002
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+In Cart
+Item 1
+Course Code: EE3202
+Course Name:    Logic Design
+Instructor:     Pharrell Williams
+Prerequisites:  None
+Capacity =      [22/50]
+Rate =          3.1(10)
+Duration =      14
+Price = 310000  Discount Rate =         17%
+Level:  3       Is it Departmental= Yes
+Item 2
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [44/50]
+Rate =          3(32)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+Item 3
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [33/50]
+Rate =          3.03846(26)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+
+Total Price Of Cart:    2.04e+06
+After Discount: 1.3222e+06
+Average Discount Ratio:35.1863%
+Would You Like To Finish Registering Process And Continue With Payment? (This Will Use Your Already Configured Payment Method
+[Y] Yes - [N] No Y
+Entered Payment Info
+Billing Information
+Card Number = 0182 3882 3393 5633
+CVV = 302
+Expiration Date = 03/27
+Card Holder Name : Mustafa Can Sezgin
+
+Succesfully Registered Course in Register Slot 1 of 3
+
+Succesfully Registered Course in Register Slot 2 of 3
+
+Succesfully Registered Course in Register Slot 3 of 3
+
+Total Price of 1322200.01 has been transactioned from your Cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+1
+Please Choose What Information to change
+1-User Name
+2-User Surname
+3-User Mail Adress
+4-Change Payment Information
+5 - Go Back5
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+2
+User Name: Ahmet Deniz
+User Surname: Sezgin
+User Mail: a.deniz.sezgin@gmail.com
+Registered Courses :
+Course 1
+Course Code: EE3202
+Course Name:    Logic Design
+Instructor:     Pharrell Williams
+Prerequisites:  None
+Capacity =      [23/50]
+Rate =          3.1(10)
+Duration =      14
+Price = 310000  Discount Rate =         17%
+Level:  3       Is it Departmental= Yes
+Course 2
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(32)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+Course 3
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [34/50]
+Rate =          3.03846(26)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+Cart Is Empty
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : WrongID.94930fdıs
+Can't Find Requested Course
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+7
+Registered Courses :
+Course 1
+Course Code: EE3202
+Course Name:    Logic Design
+Instructor:     Pharrell Williams
+Prerequisites:  None
+Capacity =      [23/50]
+Rate =          3.1(10)
+Duration =      14
+Price = 310000  Discount Rate =         17%
+Level:  3       Is it Departmental= Yes
+Course 2
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(32)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+Course 3
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [34/50]
+Rate =          3.03846(26)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+Please Select Which Item You Want To Rate (1-3) :1
+Enter Your Rating 1-5 (-1 to cancel) :5
+3.1->3.27273
+Rate Updated
+Thank You For Rating
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+7
+Registered Courses :
+Course 1
+Course Code: EE3202
+Course Name:    Logic Design
+Instructor:     Pharrell Williams
+Prerequisites:  None
+Capacity =      [23/50]
+Rate =          3.27273(11)
+Duration =      14
+Price = 310000  Discount Rate =         17%
+Level:  3       Is it Departmental= Yes
+Course 2
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(32)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+Course 3
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [34/50]
+Rate =          3.03846(26)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+Please Select Which Item You Want To Rate (1-3) :3
+Enter Your Rating 1-5 (-1 to cancel) :5
+3.03846->3.11111
+Rate Updated
+Thank You For Rating
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+7
+Registered Courses :
+Course 1
+Course Code: EE3202
+Course Name:    Logic Design
+Instructor:     Pharrell Williams
+Prerequisites:  None
+Capacity =      [23/50]
+Rate =          3.27273(11)
+Duration =      14
+Price = 310000  Discount Rate =         17%
+Level:  3       Is it Departmental= Yes
+Course 2
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(32)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+Course 3
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [34/50]
+Rate =          3.11111(27)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+Please Select Which Item You Want To Rate (1-3) :2
+Enter Your Rating 1-5 (-1 to cancel) :3
+3->3
+Rate Updated
+Thank You For Rating
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+l
+You Choose To log out please enter "logout" exactly to log out:
+logout
+
+Logged Out!
+Enter Login Information
+Name:           Pınar
+Surname:        Akar
+Mail Adress:    pinarakar@kahvedunyasi.com
+
+
+Welcome Pınar Akar
+logged in as "pinarakar@kahvedunyasi.com"
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT4001
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT4001
+
+Item Exists In Cart
+Can't Add Requested Course
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT5001
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT6001
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+6
+In Cart
+Item 1
+Course Code: SOFT4001
+Course Name:    Object Oriented Programming - II
+Instructor:     Bender Bending Rodrigez
+Prerequisites:  SOFT3001
+Capacity =      [39/120]
+Rate =          2.70968(31)
+Duration =      21
+Price =         840000  Discount Rate =         41.5 %
+Level:          4
+Lanugage:       C++
+Environment:    GCC (editor depends on student preference)
+Item 2
+Course Code: SOFT5001
+Course Name:    .NET Development - I
+Instructor:     Calculon
+Prerequisites:  None
+Capacity =      [19/80]
+Rate =          3.61538(13)
+Duration =      28
+Price =         470000  Discount Rate =         27 %
+Level:          5
+Lanugage:       C#
+Environment:    Visual Studio 2022
+Item 3
+Course Code: SOFT6001
+Course Name:    .NET Development - II
+Instructor:     Metal Sonic
+Prerequisites:  SOFT5001
+Capacity =      [20/80]
+Rate =          3.72727(11)
+Duration =      28
+Price =         410000  Discount Rate =         25 %
+Level:          6
+Lanugage:       C#
+Environment:    Visual Studio 2022
+
+Total Price Of Cart:    1.72e+06
+After Discount: 1.142e+06
+Average Discount Ratio:33.6047%
+Please Select Which Item You Want To Remove From Cart (1-3) :3
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+In Cart
+Item 1
+Course Code: SOFT4001
+Course Name:    Object Oriented Programming - II
+Instructor:     Bender Bending Rodrigez
+Prerequisites:  SOFT3001
+Capacity =      [39/120]
+Rate =          2.70968(31)
+Duration =      21
+Price =         840000  Discount Rate =         41.5 %
+Level:          4
+Lanugage:       C++
+Environment:    GCC (editor depends on student preference)
+Item 2
+Course Code: SOFT5001
+Course Name:    .NET Development - I
+Instructor:     Calculon
+Prerequisites:  None
+Capacity =      [19/80]
+Rate =          3.61538(13)
+Duration =      28
+Price =         470000  Discount Rate =         27 %
+Level:          5
+Lanugage:       C#
+Environment:    Visual Studio 2022
+
+Total Price Of Cart:    1.31e+06
+After Discount: 834500
+Average Discount Ratio:36.2977%
+Would You Like To Finish Registering Process And Continue With Payment?
+[Y] Yes - [N] No N
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT7001
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+6
+In Cart
+Item 1
+Course Code: SOFT4001
+Course Name:    Object Oriented Programming - II
+Instructor:     Bender Bending Rodrigez
+Prerequisites:  SOFT3001
+Capacity =      [39/120]
+Rate =          2.70968(31)
+Duration =      21
+Price =         840000  Discount Rate =         41.5 %
+Level:          4
+Lanugage:       C++
+Environment:    GCC (editor depends on student preference)
+Item 2
+Course Code: SOFT5001
+Course Name:    .NET Development - I
+Instructor:     Calculon
+Prerequisites:  None
+Capacity =      [19/80]
+Rate =          3.61538(13)
+Duration =      28
+Price =         470000  Discount Rate =         27 %
+Level:          5
+Lanugage:       C#
+Environment:    Visual Studio 2022
+Item 3
+Course Code: SOFT7001
+Course Name:    Scripting - I
+Instructor:     WALL-E
+Prerequisites:  None
+Capacity =      [49/50]
+Rate =          3.4(5)
+Duration =      7
+Price =         170000  Discount Rate =         8.5 %
+Level:          7
+Lanugage:       Python
+Environment:    Pycharm
+
+Total Price Of Cart:    1.48e+06
+After Discount: 990050
+Average Discount Ratio:33.1047%
+Please Select Which Item You Want To Remove From Cart (1-3) :2
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+In Cart
+Item 1
+Course Code: SOFT4001
+Course Name:    Object Oriented Programming - II
+Instructor:     Bender Bending Rodrigez
+Prerequisites:  SOFT3001
+Capacity =      [39/120]
+Rate =          2.70968(31)
+Duration =      21
+Price =         840000  Discount Rate =         41.5 %
+Level:          4
+Lanugage:       C++
+Environment:    GCC (editor depends on student preference)
+Item 2
+Course Code: SOFT7001
+Course Name:    Scripting - I
+Instructor:     WALL-E
+Prerequisites:  None
+Capacity =      [49/50]
+Rate =          3.4(5)
+Duration =      7
+Price =         170000  Discount Rate =         8.5 %
+Level:          7
+Lanugage:       Python
+Environment:    Pycharm
+
+Total Price Of Cart:    1.01e+06
+After Discount: 646950
+Average Discount Ratio:35.9455%
+Would You Like To Finish Registering Process And Continue With Payment?
+[Y] Yes - [N] No N
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT8001
+Can't Find Requested Course
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+3
+Select Course Category:
+1-Software Courses
+2-Language Courses
+3-Professional Development Courses
+4-Elective Courses
+5-Go Back
+1
+Course 1 for Software
+Course Code: SOFT1001
+Course Name:    Programming - I
+Instructor:     T-800
+Prerequisites:  None
+Capacity =      [120/90]
+Rate =          3(33)
+Duration =      14
+Price =         990000  Discount Rate =         40 %
+Level:          1
+Lanugage:       C
+Environment:    Visual Studio 2022
+
+Course Full!!
+
+
+Course 2 for Software
+Course Code: SOFT2001
+Course Name:    Programming - II
+Instructor:     T-1000
+Prerequisites:  SOFT1001
+Capacity =      [58/90]
+Rate =          2.48(25)
+Duration =      14
+Price =         620000  Discount Rate =         32 %
+Level:          2
+Lanugage:       C
+Environment:    GCC (editor depends on student preference)
+
+Course 3 for Software
+Course Code: SOFT3001
+Course Name:    Object Oriented Programming - I
+Instructor:     HAL9000
+Prerequisites:  None
+Capacity =      [69/120]
+Rate =          2.95833(48)
+Duration =      21
+Price =         1.42e+06        Discount Rate =         58.5 %
+Level:          3
+Lanugage:       C++
+Environment:    Visual Studio 2022
+
+Course 4 for Software
+Course Code: SOFT4001
+Course Name:    Object Oriented Programming - II
+Instructor:     Bender Bending Rodrigez
+Prerequisites:  SOFT3001
+Capacity =      [39/120]
+Rate =          2.70968(31)
+Duration =      21
+Price =         840000  Discount Rate =         41.5 %
+Level:          4
+Lanugage:       C++
+Environment:    GCC (editor depends on student preference)
+
+Course 5 for Software
+Course Code: SOFT5001
+Course Name:    .NET Development - I
+Instructor:     Calculon
+Prerequisites:  None
+Capacity =      [19/80]
+Rate =          3.61538(13)
+Duration =      28
+Price =         470000  Discount Rate =         27 %
+Level:          5
+Lanugage:       C#
+Environment:    Visual Studio 2022
+
+Course 6 for Software
+Course Code: SOFT6001
+Course Name:    .NET Development - II
+Instructor:     Metal Sonic
+Prerequisites:  SOFT5001
+Capacity =      [20/80]
+Rate =          3.72727(11)
+Duration =      28
+Price =         410000  Discount Rate =         25 %
+Level:          6
+Lanugage:       C#
+Environment:    Visual Studio 2022
+
+Course 7 for Software
+Course Code: SOFT7001
+Course Name:    Scripting - I
+Instructor:     WALL-E
+Prerequisites:  None
+Capacity =      [49/50]
+Rate =          3.4(5)
+Duration =      7
+Price =         170000  Discount Rate =         8.5 %
+Level:          7
+Lanugage:       Python
+Environment:    Pycharm
+
+Course 8 for Software
+Course Code: SOFT7002
+Course Name:    Platform Independent Programming - I
+Instructor:     Ultron
+Prerequisites:  SOFT2001
+Capacity =      [42/30]
+Rate =          4.25(4)
+Duration =      14
+Price =         170000  Discount Rate =         11 %
+Level:          7
+Lanugage:       Java
+Environment:    Visual Studio 2022
+
+Course Full!!
+
+
+Course 9 for Software
+Course Code: SOFT7003
+Course Name:    Low Level Programming - I
+Instructor:     GLaDOS
+Prerequisites:  None
+Capacity =      [7/20]
+Rate =          3.2(5)
+Duration =      14
+Price =         160000  Discount Rate =         12 %
+Level:          7
+Lanugage:       Assembly
+Environment:    GNU Assembler
+
+Course 10 for Software
+Course Code: SOFT7004
+Course Name:    Website Development - I
+Instructor:     Wheatley
+Prerequisites:  None
+Capacity =      [50/50]
+Rate =          3.45455(22)
+Duration =      10
+Price =         760000  Discount Rate =         27 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+
+Course Full!!
+
+
+Course 11 for Software
+Course Code: SOFT7005
+Course Name:    Bash automation
+Instructor:     Rick Sanchez
+Prerequisites:  SOFT7001
+Capacity =      [19/20]
+Rate =          3.14286(7)
+Duration =      16
+Price =         220000  Discount Rate =         15 %
+Level:          7
+Lanugage:       Bash
+Environment:    UNIX-based OS recommended
+
+Course 12 for Software
+Course Code: SOFT7006
+Course Name:    Windows automation
+Instructor:     Gordon Freeman
+Prerequisites:  SOFT7001
+Capacity =      [19/20]
+Rate =          4.16667(6)
+Duration =      16
+Price =         250000  Discount Rate =         14 %
+Level:          7
+Lanugage:       Batch
+Environment:    Windows
+
+Course 13 for Software
+Course Code: SOFT7101
+Course Name:    Scripting - II
+Instructor:     Tony Stark
+Prerequisites:  None
+Capacity =      [49/50]
+Rate =          3.66667(3)
+Duration =      7
+Price =         110000  Discount Rate =         6.5 %
+Level:          7
+Lanugage:       Python
+Environment:    Student can Choose
+
+Course 14 for Software
+Course Code: SOFT7102
+Course Name:    Platform Independent Programming - II
+Instructor:     Eugene Kaspersky
+Prerequisites:  SOFT2001
+Capacity =      [42/60]
+Rate =          2.83333(24)
+Duration =      14
+Price =         680000  Discount Rate =         31 %
+Level:          7
+Lanugage:       Java
+Environment:    Student can Choose
+
+Course 15 for Software
+Course Code: SOFT7103
+Course Name:    Low Level Programming - II
+Instructor:     Masatoshi Shima
+Prerequisites:  None
+Capacity =      [36/20]
+Rate =          3.23333(30)
+Duration =      14
+Price =         970000  Discount Rate =         37 %
+Level:          7
+Lanugage:       Assembly
+Environment:    GNU Assembler
+
+Course Full!!
+
+
+Course 16 for Software
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(33)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT7104
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+6
+In Cart
+Item 1
+Course Code: SOFT4001
+Course Name:    Object Oriented Programming - II
+Instructor:     Bender Bending Rodrigez
+Prerequisites:  SOFT3001
+Capacity =      [39/120]
+Rate =          2.70968(31)
+Duration =      21
+Price =         840000  Discount Rate =         41.5 %
+Level:          4
+Lanugage:       C++
+Environment:    GCC (editor depends on student preference)
+Item 2
+Course Code: SOFT7001
+Course Name:    Scripting - I
+Instructor:     WALL-E
+Prerequisites:  None
+Capacity =      [49/50]
+Rate =          3.4(5)
+Duration =      7
+Price =         170000  Discount Rate =         8.5 %
+Level:          7
+Lanugage:       Python
+Environment:    Pycharm
+Item 3
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(33)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+
+Total Price Of Cart:    1.97e+06
+After Discount: 1.24215e+06
+Average Discount Ratio:36.9467%
+Please Select Which Item You Want To Remove From Cart (1-3) :1
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+In Cart
+Item 1
+Course Code: SOFT7001
+Course Name:    Scripting - I
+Instructor:     WALL-E
+Prerequisites:  None
+Capacity =      [49/50]
+Rate =          3.4(5)
+Duration =      7
+Price =         170000  Discount Rate =         8.5 %
+Level:          7
+Lanugage:       Python
+Environment:    Pycharm
+Item 2
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(33)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+
+Total Price Of Cart:    1.13e+06
+After Discount: 750750
+Average Discount Ratio:33.5619%
+Would You Like To Finish Registering Process And Continue With Payment?
+[Y] Yes - [N] No N
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+2
+User Name: Pınar
+User Surname: Akar
+User Mail: pinarakar@kahvedunyasi.com
+The user has not registered to any courses.
+In Cart
+Item 1
+Course Code: SOFT7001
+Course Name:    Scripting - I
+Instructor:     WALL-E
+Prerequisites:  None
+Capacity =      [49/50]
+Rate =          3.4(5)
+Duration =      7
+Price =         170000  Discount Rate =         8.5 %
+Level:          7
+Lanugage:       Python
+Environment:    Pycharm
+Item 2
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(33)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+
+Total Price Of Cart:    1.13e+06
+After Discount: 750750
+Average Discount Ratio:33.5619%
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+3
+Select Course Category:
+1-Software Courses
+2-Language Courses
+3-Professional Development Courses
+4-Elective Courses
+5-Go Back
+2
+Course 1 for Language
+Course Code: LANG1001
+Course Name:    English - I
+Instructor:     Edna Mode
+Prerequisites:  None
+Capacity =      [82/40]
+Rate =          2.8125(16)
+Duration =      14
+Price = 450000  Discount Rate = 23%
+Level:  1
+Lanugage:English
+Native Teacher=Yes
+
+Course Full!!
+
+
+Course 2 for Language
+Course Code: LANG1002
+Course Name:    German - I
+Instructor:     Optimus Prime
+Prerequisites:  None
+Capacity =      [34/50]
+Rate =          3.11111(27)
+Duration =      28
+Price = 770000  Discount Rate = 39%
+Level:  1
+Lanugage:German
+Native Teacher=No
+
+Course 3 for Language
+Course Code: LANG1003
+Course Name:    Turkish - I
+Instructor:     Wednesday Adams
+Prerequisites:  None
+Capacity =      [80/80]
+Rate =          3.16667(18)
+Duration =      12
+Price = 570000  Discount Rate = 24%
+Level:  1
+Lanugage:Turkish
+Native Teacher=No
+
+Course Full!!
+
+
+Course 4 for Language
+Course Code: LANG2001
+Course Name:    English - II
+Instructor:     Ethan Hunt
+Prerequisites:  LANG1001
+Capacity =      [20/40]
+Rate =          2.6(5)
+Duration =      20
+Price = 130000  Discount Rate = 15%
+Level:  2
+Lanugage:English
+Native Teacher=Yes
+
+Course 5 for Language
+Course Code: LANG3001
+Course Name:    Russian - I
+Instructor:     Ivan Vanko
+Prerequisites:  None
+Capacity =      [12/20]
+Rate =          3.33333(3)
+Duration =      40
+Price = 100000  Discount Rate = 23%
+Level:  3
+Lanugage:Russian
+Native Teacher=Yes
+
+Course 6 for Language
+Course Code: LANG3002
+Course Name:    Italian - I
+Instructor:     Vito Corleone
+Prerequisites:  None
+Capacity =      [19/20]
+Rate =          2.94444(18)
+Duration =      10
+Price = 530000  Discount Rate = 23%
+Level:  3
+Lanugage:Italian
+Native Teacher=Yes
+
+Course 7 for Language
+Course Code: LANG3003
+Course Name:    Turkish - II
+Instructor:     Arif Isik
+Prerequisites:  LANG1003
+Capacity =      [8/80]
+Rate =          2(1)
+Duration =      10
+Price = 20000   Discount Rate = 6%
+Level:  3
+Lanugage:Turkish
+Native Teacher=Yes
+
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : LANG3003
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+6
+In Cart
+Item 1
+Course Code: SOFT7001
+Course Name:    Scripting - I
+Instructor:     WALL-E
+Prerequisites:  None
+Capacity =      [49/50]
+Rate =          3.4(5)
+Duration =      7
+Price =         170000  Discount Rate =         8.5 %
+Level:          7
+Lanugage:       Python
+Environment:    Pycharm
+Item 2
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(33)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+Item 3
+Course Code: LANG3003
+Course Name:    Turkish - II
+Instructor:     Arif Isik
+Prerequisites:  LANG1003
+Capacity =      [8/80]
+Rate =          2(1)
+Duration =      10
+Price = 20000   Discount Rate = 6%
+Level:  3
+Lanugage:Turkish
+Native Teacher=Yes
+
+Total Price Of Cart:    1.15e+06
+After Discount: 769550
+Average Discount Ratio:33.0826%
+Please Select Which Item You Want To Remove From Cart (1-3) :1
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+6
+In Cart
+Item 1
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(33)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+Item 2
+Course Code: LANG3003
+Course Name:    Turkish - II
+Instructor:     Arif Isik
+Prerequisites:  LANG1003
+Capacity =      [8/80]
+Rate =          2(1)
+Duration =      10
+Price = 20000   Discount Rate = 6%
+Level:  3
+Lanugage:Turkish
+Native Teacher=Yes
+
+Total Price Of Cart:    980000
+After Discount: 614000
+Average Discount Ratio:37.3469%
+Please Select Which Item You Want To Remove From Cart (1-2) :2
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+In Cart
+Item 1
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(33)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+
+Total Price Of Cart:    960000
+After Discount: 595200
+Average Discount Ratio:38%
+Would You Like To Finish Registering Process And Continue With Payment?
+[Y] Yes - [N] No N
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : LANG2001
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+In Cart
+Item 1
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(33)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+Item 2
+Course Code: LANG2001
+Course Name:    English - II
+Instructor:     Ethan Hunt
+Prerequisites:  LANG1001
+Capacity =      [20/40]
+Rate =          2.6(5)
+Duration =      20
+Price = 130000  Discount Rate = 15%
+Level:  2
+Lanugage:English
+Native Teacher=Yes
+
+Total Price Of Cart:    1.09e+06
+After Discount: 705700
+Average Discount Ratio:35.2569%
+Would You Like To Finish Registering Process And Continue With Payment?
+[Y] Yes - [N] No N
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+6
+In Cart
+Item 1
+Course Code: SOFT7104
+Course Name:    Website Development -II
+Instructor:     Vision
+Prerequisites:  None
+Capacity =      [45/50]
+Rate =          3(33)
+Duration =      12
+Price =         960000  Discount Rate =         38 %
+Level:          7
+Lanugage:       HTML
+Environment:    Student can Choose
+Item 2
+Course Code: LANG2001
+Course Name:    English - II
+Instructor:     Ethan Hunt
+Prerequisites:  LANG1001
+Capacity =      [20/40]
+Rate =          2.6(5)
+Duration =      20
+Price = 130000  Discount Rate = 15%
+Level:  2
+Lanugage:English
+Native Teacher=Yes
+
+Total Price Of Cart:    1.09e+06
+After Discount: 705700
+Average Discount Ratio:35.2569%
+Please Select Which Item You Want To Remove From Cart (1-2) :1
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+In Cart
+Item 1
+Course Code: LANG2001
+Course Name:    English - II
+Instructor:     Ethan Hunt
+Prerequisites:  LANG1001
+Capacity =      [20/40]
+Rate =          2.6(5)
+Duration =      20
+Price = 130000  Discount Rate = 15%
+Level:  2
+Lanugage:English
+Native Teacher=Yes
+
+Total Price Of Cart:    130000
+After Discount: 110500
+Average Discount Ratio:15%
+Would You Like To Finish Registering Process And Continue With Payment?
+[Y] Yes - [N] No N
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+6
+In Cart
+Item 1
+Course Code: LANG2001
+Course Name:    English - II
+Instructor:     Ethan Hunt
+Prerequisites:  LANG1001
+Capacity =      [20/40]
+Rate =          2.6(5)
+Duration =      20
+Price = 130000  Discount Rate = 15%
+Level:  2
+Lanugage:English
+Native Teacher=Yes
+
+Total Price Of Cart:    130000
+After Discount: 110500
+Average Discount Ratio:15%
+Please Select Which Item You Want To Remove From Cart (1-1) :1
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+6
+Cart Is Empty
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+Cart Is Empty
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+7
+The user has not registered to any courses.
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT1001
+
+Course Full!
+Can't Add Requested Course
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT2001
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+In Cart
+Item 1
+Course Code: SOFT2001
+Course Name:    Programming - II
+Instructor:     T-1000
+Prerequisites:  SOFT1001
+Capacity =      [58/90]
+Rate =          2.48(25)
+Duration =      14
+Price =         620000  Discount Rate =         32 %
+Level:          2
+Lanugage:       C
+Environment:    GCC (editor depends on student preference)
+
+Total Price Of Cart:    620000
+After Discount: 421600
+Average Discount Ratio:32%
+Would You Like To Finish Registering Process And Continue With Payment?
+[Y] Yes - [N] No Y
+Enter Billing Information
+Card Number     XXXX_XXXX_XXXX_XXXX
+                012345678910111221
+Expiration Date MM/YY =12 2028
+CVV =231
+Full Name Of Card Holder :Pınar Akar
+Entered Payment Info
+Billing Information
+Card Number = 0123 4567 8910 1112
+CVV = 231
+Expiration Date = 12/28
+Card Holder Name : Pınar Akar
+
+Succesfully Registered Course in Register Slot 1 of 3
+
+Total Price of 421600.00 has been transactioned from your Cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT2001
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+In Cart
+Item 1
+Course Code: SOFT2001
+Course Name:    Programming - II
+Instructor:     T-1000
+Prerequisites:  SOFT1001
+Capacity =      [59/90]
+Rate =          2.48(25)
+Duration =      14
+Price =         620000  Discount Rate =         32 %
+Level:          2
+Lanugage:       C
+Environment:    GCC (editor depends on student preference)
+
+Total Price Of Cart:    620000
+After Discount: 421600
+Average Discount Ratio:32%
+Would You Like To Finish Registering Process And Continue With Payment? (This Will Use Your Already Configured Payment Method
+[Y] Yes - [N] No Y
+Entered Payment Info
+Billing Information
+Card Number = 0123 4567 8910 1112
+CVV = 231
+Expiration Date = 12/28
+Card Holder Name : Pınar Akar
+Item 1 in Cart is already registered, Please Remove it and try again.
+
+An Error Occured,Payment Process is cancelled
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+6
+In Cart
+Item 1
+Course Code: SOFT2001
+Course Name:    Programming - II
+Instructor:     T-1000
+Prerequisites:  SOFT1001
+Capacity =      [59/90]
+Rate =          2.48(25)
+Duration =      14
+Price =         620000  Discount Rate =         32 %
+Level:          2
+Lanugage:       C
+Environment:    GCC (editor depends on student preference)
+
+Total Price Of Cart:    620000
+After Discount: 421600
+Average Discount Ratio:32%
+Please Select Which Item You Want To Remove From Cart (1-1) :1
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+4
+Enter The ID of the Course : SOFT3001
+
+Operation Successfull
+Successfully added Course to the cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+5
+In Cart
+Item 1
+Course Code: SOFT3001
+Course Name:    Object Oriented Programming - I
+Instructor:     HAL9000
+Prerequisites:  None
+Capacity =      [69/120]
+Rate =          2.95833(48)
+Duration =      21
+Price =         1.42e+06        Discount Rate =         58.5 %
+Level:          3
+Lanugage:       C++
+Environment:    Visual Studio 2022
+
+Total Price Of Cart:    1.42e+06
+After Discount: 589300
+Average Discount Ratio:58.5%
+Would You Like To Finish Registering Process And Continue With Payment? (This Will Use Your Already Configured Payment Method
+[Y] Yes - [N] No Y
+Entered Payment Info
+Billing Information
+Card Number = 0123 4567 8910 1112
+CVV = 231
+Expiration Date = 12/28
+Card Holder Name : Pınar Akar
+
+Succesfully Registered Course in Register Slot 2 of 3
+
+Total Price of 589299.99 has been transactioned from your Cart
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+2
+User Name: Pınar
+User Surname: Akar
+User Mail: pinarakar@kahvedunyasi.com
+Registered Courses :
+Course 1
+Course Code: SOFT2001
+Course Name:    Programming - II
+Instructor:     T-1000
+Prerequisites:  SOFT1001
+Capacity =      [59/90]
+Rate =          2.48(25)
+Duration =      14
+Price =         620000  Discount Rate =         32 %
+Level:          2
+Lanugage:       C
+Environment:    GCC (editor depends on student preference)
+Course 2
+Course Code: SOFT3001
+Course Name:    Object Oriented Programming - I
+Instructor:     HAL9000
+Prerequisites:  None
+Capacity =      [70/120]
+Rate =          2.95833(48)
+Duration =      21
+Price =         1.42e+06        Discount Rate =         58.5 %
+Level:          3
+Lanugage:       C++
+Environment:    Visual Studio 2022
+Cart Is Empty
+
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+q
+You Choose To Quit Program please enter ":q!" exactly to end the session:
+sodeıjıfoırjofkml
+Authentication failed!
+Please Select a Choice
+1 : Change Information
+2 : List User Information
+3 : List Avalible Courses
+4 : Add Course to Cart
+5 : List Cart
+6 : Remove From Cart
+7 : Rate Registered Courses
+
+l to log out
+q to Quit
+q
+You Choose To Quit Program please enter ":q!" exactly to end the session:
+:q!
+
+Logged Out!
+
+Exiting!
+C:\Users\adeni\Documents\GitHub\2300005633_OOP_Project\x64\Debug>

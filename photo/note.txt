@@ -1,0 +1,3 @@
+i dont know why every screenshot are stored like uuid's
+for my output using the txt files is much better anyways since it is a very long program
+there were some typos in output pictures like Sezg,n instead of Sezgin and some were intentional like logout and credit card number to show that the program has failsafes.

@@ -160,6 +160,9 @@ istream& operator>> (istream& input, Student& stu)
 	while (1) {//get expiration date values
 		cout << "Expiration Date MM/YY =";
 		input >> stu.card.date[0]; cin.ignore(); input >> stu.card.date[1];//get input
+		//keep the last 2 digits
+		if (stu.card.date[1] >= 100)
+			stu.card.date[1] %= 100;
 		if (stu.card.date[0] >= 1 && stu.card.date[0] <= 12) {//check the month values
 			if ((stu.card.date[1] == 24 && stu.card.date[0] == 12) || stu.card.date[1] >= 25)//check the year values
 				break;
@@ -169,9 +172,7 @@ istream& operator>> (istream& input, Student& stu)
 		else
 			cout << "Incorrect Date Format\n";//warn user
 	}
-	//keep the last 2 digits
-	if (stu.card.date[1] >= 100)
-		stu.card.date[1] %= 100;
+
 	//get security code
 	cout << "CVV ="; input >> stu.card.cvv;
 	cout << "Full Name Of Card Holder :";
